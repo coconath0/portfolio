@@ -1,17 +1,467 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="Nathaly Ingol | Software Engineer & Data Enthusiast"
+  description="Hi, I'm Nathaly Ingol — Senior CS student at Texas State University, Software Engineer, and AI/ML enthusiast. Open to full-time roles in Software Engineering, Data Engineering, and AI/ML starting Summer 2026."
+>
+  <Navbar />
+
+  <main>
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" aria-label="Hero section">
+
+      <!-- Giant watermark PORTFOLIO text -->
+      <div class="hero-watermark" aria-hidden="true">
+        <span>PORTFOLIO</span>
+        <span>PORTFOLIO</span>
+        <span>PORTFOLIO</span>
+        <span>PORTFOLIO</span>
+        <span>PORTFOLIO</span>
+      </div>
+
+      <!-- Big PORTFOLIO heading -->
+      <h1 class="hero-title">PORTFOLIO</h1>
+
+      <!-- Left card: intro -->
+      <div class="hero-card intro-card" data-reveal>
+        <p>Software Developer &amp; Data Engineer here!</p>
+        <p class="intro-sub">CS senior @ Texas State University · Austin, TX</p>
+        <p class="intro-sub" style="margin-top:0.25rem">Open to full-time roles starting Summer 2026 🌱</p>
+      </div>
+
+      <!-- Right: photo placeholder -->
+      <div class="hero-photo" data-reveal style="--delay: 0.15s">
+        <div class="photo-placeholder">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <path d="M21 15l-5-5L5 21"/>
+          </svg>
+          <span>Photo coming soon</span>
+        </div>
+      </div>
+
+      <!-- AI Assistant CTA -->
+      <div class="hero-assistant-btn" data-reveal style="--delay: 0.3s">
+        <a href="/assistant" class="btn-assistant">
+          <span class="btn-dot"></span>
+          Go to AI Assistant!
+        </a>
+
+        <!-- Mobile-only page nav buttons -->
+        <div class="mobile-nav-btns">
+          <a href="/about" class="mobile-nav-btn">About Me</a>
+          <a href="/resume" class="mobile-nav-btn">Resume</a>
+          <a href="/projects" class="mobile-nav-btn">Projects</a>
+        </div>
+      </div>
+
+      <!-- Social links card -->
+      <div class="hero-social-card" data-reveal style="--delay: 0.2s">
+        <a href="https://linkedin.com/in/nathaly-ingol" target="_blank" rel="noopener" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/coconath0" target="_blank" rel="noopener" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linktr.ee/nathalyingol" target="_blank" rel="noopener" class="social-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.517.528.897 1.052.897h6.15c.525 0 .973-.38 1.052-.897 0-.162 0-.323-.08-.486L13.5 9H10.5L7.953 15.066zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          Linktr.ee
+        </a>
+
+        <!-- Mobile-only Contact button -->
+        <a href="/contact" class="mobile-contact-btn">Contact Me</a>
+      </div>
+
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+/* ══════════════════════════════════════════
+   HERO — BASE (desktop-first, >1024px)
+   ══════════════════════════════════════════ */
+.hero {
+  /* svh = accounts for mobile browser chrome shrinking the viewport */
+  min-height: 100svh;
+  min-height: 100vh; /* fallback for older browsers */
+  padding-top: var(--nav-height);
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 0;
+  align-items: center;
+}
+
+/* ── Watermark ─────────────────────────── */
+.hero-watermark {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;   /* centered horizontally, same axis as hero-title */
+  pointer-events: none;
+  user-select: none;
+  gap: 0;
+}
+.hero-watermark span {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 10vw, 11rem);
+  line-height: 0.95;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(107, 58, 42, 0.15);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+/* ── Hero title ────────────────────────── */
+.hero-title {
+  grid-column: 1 / -1;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 11vw, 10rem);
+  color: var(--brown);
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  padding: 2.5rem 2rem 0;
+  position: relative;
+  z-index: 2;
+  animation: fadeDown 0.8s cubic-bezier(.22,1,.36,1) both;
+}
+
+/* ── Intro card ────────────────────────── */
+.intro-card {
+  background: var(--olive-dark);
+  color: var(--cream);
+  padding: 2.5rem 2.8rem;
+  border-radius: 4px;
+  max-width: 420px;
+  margin-left: 5vw;
+  position: relative;
+  z-index: 2;
+  align-self: center;
+}
+.intro-card p { font-size: 1.05rem; line-height: 1.6; }
+.intro-sub { margin-top: 0.6rem; font-size: 0.85rem; opacity: 0.75; }
+
+/* ── Photo ─────────────────────────────── */
+.hero-photo {
+  justify-self: center;
+  position: relative;
+  z-index: 2;
+}
+.photo-placeholder {
+  width: min(260px, 60vw);
+  height: min(290px, 67vw);
+  background: var(--white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  color: var(--text-dark);
+  opacity: 0.7;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 24px rgba(107, 58, 42, 0.08);
+}
+/* Swap .photo-placeholder for <img> once you have your photo */
+.hero-photo img {
+  width: min(260px, 60vw);
+  height: min(290px, 67vw);
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(107, 58, 42, 0.15);
+}
+
+/* ── Assistant button ──────────────────── */
+.hero-assistant-btn {
+  grid-column: 1;
+  padding: 2rem 0 3.5rem 5vw;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+.btn-assistant {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--brown);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.9rem 2.2rem;
+  border-radius: 999px;
+  transition: background 0.25s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(107, 58, 42, 0.3);
+}
+.btn-assistant:hover {
+  background: var(--brown-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(107, 58, 42, 0.4);
+}
+.btn-dot {
+  width: 8px; height: 8px;
+  background: var(--blush);
+  border-radius: 50%;
+  animation: pulse 2s ease infinite;
+}
+
+/* ── Social card ───────────────────────── */
+.hero-social-card {
+  grid-column: 2;
+  background: var(--blush);
+  padding: 1.6rem 2.2rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 200px;
+  justify-self: end;
+  margin-right: 5vw;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+  align-self: end;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--brown-dark);
+  font-weight: 500;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.social-link:hover { opacity: 0.7; transform: translateX(3px); }
+
+/* Mobile-only nav buttons — hidden on desktop */
+.mobile-nav-btns {
+  display: none;
+}
+.mobile-nav-btn {
+  display: block;
+  background: transparent;
+  border: 1.5px solid var(--brown);
+  color: var(--brown);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+}
+.mobile-nav-btn:hover {
+  background: var(--brown);
+  color: var(--cream);
+}
+.mobile-contact-btn {
+  display: none;
+  margin-top: 0.4rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(61,32,16,0.2);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brown-dark);
+  text-align: center;
+  transition: opacity 0.2s;
+}
+.mobile-contact-btn:hover { opacity: 0.7; }
+
+/* ── Reveal animation ──────────────────── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: revealUp 0.7s cubic-bezier(.22,1,.36,1) forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes revealUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.4); opacity: 0.6; }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+   ══════════════════════════════════════════
+
+   1440px+ → wide desktop
+   1024px  → laptop / tablet landscape
+   768px   → tablet portrait / large phone
+   480px   → standard phone (iPhone 14, Pixel)
+   375px   → small phone (iPhone SE, small Android)
+   ══════════════════════════════════════════ */
+
+/* ── Wide desktop (≥1440px) ─────────────── */
+@media (min-width: 1440px) {
+  .intro-card {
+    max-width: 500px;
+    padding: 3rem 3.2rem;
+    margin-left: 8vw;
+  }
+  .hero-assistant-btn { padding-left: 8vw; }
+  .hero-social-card { margin-right: 8vw; padding: 2rem 2.5rem; max-width: 220px; }
+}
+
+/* ── Laptop / tablet landscape (≤1024px) ── */
+@media (max-width: 1024px) {
+  .intro-card {
+    max-width: 360px;
+    padding: 2rem 2.2rem;
+    margin-left: 4vw;
+  }
+  .hero-assistant-btn { padding-left: 4vw; }
+  .hero-social-card { margin-right: 4vw; }
+}
+
+/* ── Tablet portrait / large phone (≤768px) */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-bottom: 3rem;
+  }
+
+  .hero-title {
+    grid-column: 1;
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  /* Move photo above the text card for visual impact */
+  .hero-photo {
+    order: -1;          /* appears right after the title */
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
+
+  .intro-card {
+    margin: 1.5rem auto 0;
+    max-width: min(480px, 88vw);
+    padding: 1.8rem 2rem;
+  }
+
+  .hero-assistant-btn {
+    grid-column: 1;
+    padding: 1.5rem 0 0;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+  }
+
+  /* Show mobile nav buttons */
+  .mobile-nav-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  /* Show Contact Me link in social card */
+  .mobile-contact-btn {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-social-card {
+    grid-column: 1;
+    justify-self: center;
+    margin-right: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: min(400px, 88vw);
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    gap: 1rem 1.8rem;
+  }
+}
+
+/* ── Standard phones (≤480px) — iPhone 14, Pixel ── */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(2.5rem, 18vw, 4.5rem);
+    padding: 1.2rem 1rem 0;
+  }
+
+  .hero-watermark span {
+    font-size: clamp(2.8rem, 20vw, 6rem);
+  }
+
+  .intro-card {
+    max-width: 92vw;
+    padding: 1.4rem 1.4rem;
+    border-radius: 6px;
+  }
+  .intro-card p  { font-size: 0.95rem; }
+  .intro-sub     { font-size: 0.8rem; margin-top: 0.5rem; }
+
+  .btn-assistant {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.8rem;
+  }
+
+  .hero-social-card {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 92vw;
+    margin: 2rem 0 0;
+    padding: 1.2rem 1.4rem;
+    gap: 0.8rem;
+  }
+}
+
+/* ── Small phones (≤375px) — iPhone SE ──── */
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: clamp(2.2rem, 18vw, 3.8rem);
+    padding: 1rem 0.75rem 0;
+  }
+
+  .intro-card {
+    max-width: 95vw;
+    padding: 1.2rem 1.2rem;
+  }
+
+  .btn-assistant {
+    font-size: 0.85rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+/* ── Reduce motion preference ──────────── */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal], .hero-title {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .btn-dot { animation: none; }
+}
+</style>

@@ -1,1 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Bebas+Neue&display=swap');
+
 @import "tailwindcss";
+
+:root {
+    --cream: #F5F0E8;
+    --olive: #8B9A5A;
+    --olive-dark: #4A5A2A;
+    --brown: #6B3A2A;
+    --brown-dark: #3D2010;
+    --blush: #E8C4C8;
+    --white: #FFFFFF;
+    --text-dark: #2A1A0A;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+    --nav-height: 72px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+    cursor: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.cursor {
+    width: 12px;
+    height: 12px;
+    background: var(--brown);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-ring {
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid var(--brown);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9998;
+    transition: transform 0.3s ease;
+    transform: translate(-50%, -50%);
+    opacity: 0.55;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--olive);
+    border-radius: 3px;
+}
+
+::selection {
+    background: var(--olive);
+    color: #fff;
+}
+
+/* ── Global responsive utilities ───────── */
+
+/* iOS-safe scroll lock when mobile menu is open */
+html.menu-open {
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Prevent horizontal scroll on all pages */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* iOS safe area padding (notch / home indicator) */
+body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+
+/* Default touch highlight off (handled per-element) */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Make interactive elements easier to tap on touch screens */
+a, button {
+    touch-action: manipulation;
+}
+
+/* Fluid images by default */
+img {
+    height: auto;
+}

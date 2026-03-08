@@ -140,8 +140,8 @@ import Footer from "../components/Footer.astro";
             <div class="contact-right" data-reveal style="--delay:0.15s">
                 <div class="form-card">
                     <form id="contactForm" class="contact-form" novalidate>
-                        <!-- Web3Forms access key -->
-                        <input type="hidden" name="access_key" value="MY_KEY" />
+                        <!-- Web3Forms access key — value injected at build time from .env -->
+                        <input type="hidden" name="access_key" value={import.meta.env.PUBLIC_WEB3FORMS_KEY} />
                         <input
                             type="hidden"
                             name="subject"

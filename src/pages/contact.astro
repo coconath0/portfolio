@@ -1,0 +1,687 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout
+    title="Contact | Nathaly Ingol"
+    description="Get in touch with Nathaly Ingol — software engineer, designer, and CS senior at Texas State University."
+>
+    <Navbar />
+
+    <main>
+        <section class="contact-section" aria-label="Contact Me">
+            <!-- ── Left: info ─────────────────────── -->
+            <div class="contact-left" data-reveal>
+                <p class="contact-eyebrow">Let's connect</p>
+                <h1 class="contact-title">Contact<br />Me</h1>
+
+                <p class="contact-intro">
+                    Whether you have an opportunity, a project idea, or just
+                    want to say hi — my inbox is always open. I'll get back to
+                    you as soon as I can!
+                </p>
+
+                <ul class="contact-info">
+                    <li>
+                        <span class="info-icon" aria-hidden="true">
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                ></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="info-label">Email</p>
+                            <a
+                                href="mailto:naingol10@gmail.com"
+                                class="info-value">naingol10@gmail.com</a
+                            >
+                        </div>
+                    </li>
+                    <li>
+                        <span class="info-icon" aria-hidden="true">
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.08 5.18 2 2 0 015.09 3h3a2 2 0 012 1.72c.13 1 .37 1.97.72 2.9a2 2 0 01-.45 2.11L9.09 11a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.93.35 1.9.59 2.9.72A2 2 0 0122 16.92z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="info-label">Phone</p>
+                            <a href="tel:+17373364639" class="info-value"
+                                >(737) 336-4639</a
+                            >
+                        </div>
+                    </li>
+                    <li>
+                        <span class="info-icon" aria-hidden="true">
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"
+                                ></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="info-label">Location</p>
+                            <p class="info-value">San Marcos, TX</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Social links -->
+                <div class="contact-socials">
+                    <a
+                        href="https://github.com/coconath0"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="GitHub"
+                    >
+                        <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            ><path
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                            ></path></svg
+                        >
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/nathalyingol"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="LinkedIn"
+                    >
+                        <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            ><path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                            ></path></svg
+                        >
+                    </a>
+                </div>
+            </div>
+
+            <!-- ── Right: form ────────────────────── -->
+            <div class="contact-right" data-reveal style="--delay:0.15s">
+                <div class="form-card">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <!-- Web3Forms access key -->
+                        <input type="hidden" name="access_key" value="MY_KEY" />
+                        <input
+                            type="hidden"
+                            name="subject"
+                            id="hidden-subject"
+                            value="New contact from portfolio"
+                        />
+                        <input
+                            type="hidden"
+                            name="from_name"
+                            value="Portfolio Contact Form"
+                        />
+                        <!-- Honeypot -->
+                        <input
+                            type="checkbox"
+                            name="botcheck"
+                            class="hidden-field"
+                            style="display:none"
+                        />
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What's this about?"
+                                required
+                                oninput="document.getElementById('hidden-subject').value = this.value || 'New contact from portfolio'"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Tell me more…"
+                                required></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            id="submitBtn"
+                            class="form-submit"
+                        >
+                            <span id="submitLabel">Send Message</span>
+                            <svg
+                                id="submitIcon"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="22" y1="2" x2="11" y2="13"
+                                ></line><polygon
+                                    points="22 2 15 22 11 13 2 9 22 2"
+                                ></polygon>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <!-- Success message -->
+                    <div
+                        class="form-success"
+                        id="formSuccess"
+                        aria-live="polite"
+                    >
+                        <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            ><path d="M22 11.08V12a10 10 0 11-5.93-9.14"
+                            ></path><polyline points="22 4 12 14.01 9 11.01"
+                            ></polyline></svg
+                        >
+                        <p>Thanks! I'll get back to you soon.</p>
+                    </div>
+
+                    <!-- Error message -->
+                    <div class="form-error" id="formError" aria-live="polite">
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            ><circle cx="12" cy="12" r="10"></circle><line
+                                x1="12"
+                                y1="8"
+                                x2="12"
+                                y2="12"></line><line
+                                x1="12"
+                                y1="16"
+                                x2="12.01"
+                                y2="16"></line></svg
+                        >
+                        <p>
+                            Something went wrong. Please try again or email me
+                            directly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</BaseLayout>
+
+<script>
+    const form = document.getElementById(
+        "contactForm",
+    ) as HTMLFormElement | null;
+    const submitBtn = document.getElementById(
+        "submitBtn",
+    ) as HTMLButtonElement | null;
+    const submitLabel = document.getElementById("submitLabel");
+    const submitIcon = document.getElementById("submitIcon");
+    const formSuccess = document.getElementById("formSuccess");
+    const formError = document.getElementById("formError");
+
+    form?.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (!form || !submitBtn) return;
+
+        // Loading state
+        submitBtn.disabled = true;
+        if (submitLabel) submitLabel.textContent = "Sending…";
+        if (submitIcon) submitIcon.style.display = "none";
+        if (formError) formError.classList.remove("visible");
+
+        const data = Object.fromEntries(new FormData(form));
+
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify(data),
+            });
+            const json = await res.json();
+
+            if (res.ok && json.success) {
+                form.style.display = "none";
+                if (formSuccess) formSuccess.classList.add("visible");
+            } else {
+                throw new Error(json.message || "Submission failed");
+            }
+        } catch {
+            // Restore button + show error
+            submitBtn.disabled = false;
+            if (submitLabel) submitLabel.textContent = "Send Message";
+            if (submitIcon) submitIcon.style.display = "";
+            if (formError) formError.classList.add("visible");
+        }
+    });
+</script>
+
+<style>
+    /* ══════════════════════════════════════════
+   SECTION LAYOUT
+   ══════════════════════════════════════════ */
+    .contact-section {
+        background: var(--cream);
+        min-height: 100vh;
+        padding-top: calc(var(--nav-height) + 4rem);
+        padding-bottom: 6rem;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    /* ══════════════════════════════════════════
+   LEFT — INFO
+   ══════════════════════════════════════════ */
+    .contact-eyebrow {
+        font-family: var(--font-body);
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--olive-dark);
+        margin-bottom: 0.6rem;
+    }
+
+    .contact-title {
+        font-family: var(--font-display);
+        font-size: clamp(4.5rem, 10vw, 8rem);
+        line-height: 0.9;
+        color: var(--olive-dark);
+        letter-spacing: 0.01em;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-intro {
+        font-size: 0.92rem;
+        color: var(--brown);
+        line-height: 1.7;
+        max-width: 360px;
+        margin-bottom: 2.5rem;
+    }
+
+    .contact-info {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+    }
+
+    .contact-info li {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .info-icon {
+        width: 42px;
+        height: 42px;
+        background: var(--white);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+        color: var(--olive-dark);
+    }
+
+    .info-label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--olive-dark);
+        opacity: 0.7;
+        margin-bottom: 0.15rem;
+    }
+
+    .info-value {
+        font-size: 0.92rem;
+        color: var(--text-dark);
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+    a.info-value:hover {
+        color: var(--olive-dark);
+        text-decoration: underline;
+    }
+
+    .contact-socials {
+        display: flex;
+        gap: 1rem;
+    }
+    .contact-socials a {
+        width: 42px;
+        height: 42px;
+        background: var(--olive-dark);
+        color: var(--cream);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:
+            opacity 0.2s,
+            transform 0.2s;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    }
+    .contact-socials a:hover {
+        opacity: 0.8;
+        transform: translateY(-2px);
+    }
+
+    /* ══════════════════════════════════════════
+   RIGHT — FORM CARD
+   ══════════════════════════════════════════ */
+    .form-card {
+        background: var(--white);
+        border-radius: 16px;
+        padding: 3rem 3rem;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+        position: relative;
+        min-height: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Top accent bar */
+    .form-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--olive-dark), var(--olive));
+        border-radius: 16px 16px 0 0;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .hidden-field {
+        display: none;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .form-group label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--olive-dark);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-family: var(--font-body);
+        font-size: 0.9rem;
+        color: var(--text-dark);
+        background: var(--cream);
+        border: 1.5px solid transparent;
+        border-radius: 8px;
+        padding: 0.7rem 0.9rem;
+        outline: none;
+        transition:
+            border-color 0.2s,
+            box-shadow 0.2s;
+        resize: none;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: rgba(42, 26, 10, 0.3);
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color: var(--olive-dark);
+        box-shadow: 0 0 0 3px rgba(67, 74, 21, 0.1);
+        background: var(--white);
+    }
+
+    .form-submit {
+        align-self: flex-start;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: var(--olive-dark);
+        color: var(--cream);
+        font-family: var(--font-body);
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 0.75rem 2rem;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+        transition:
+            opacity 0.2s,
+            transform 0.2s;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    }
+    .form-submit:hover {
+        opacity: 0.85;
+        transform: translateY(-2px);
+    }
+    .form-submit:active {
+        transform: translateY(0);
+    }
+
+    /* Success state */
+    .form-success {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+        color: var(--olive-dark);
+        padding: 2rem;
+    }
+    .form-success p {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text-dark);
+    }
+    .form-success.visible {
+        display: flex;
+    }
+
+    .form-error {
+        display: none;
+        align-items: center;
+        gap: 0.6rem;
+        background: #fff3f3;
+        border: 1px solid #f5c6c6;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        color: #8b2020;
+        font-size: 0.9rem;
+        margin-top: 0.75rem;
+    }
+    .form-error.visible {
+        display: flex;
+    }
+
+    /* ══════════════════════════════════════════
+   REVEAL ANIMATION
+   ══════════════════════════════════════════ */
+    [data-reveal] {
+        opacity: 0;
+        transform: translateY(24px);
+        animation: revealUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        animation-delay: var(--delay, 0s);
+    }
+    @keyframes revealUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* ══════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════ */
+    @media (min-width: 1440px) {
+        .contact-section {
+            padding-left: 12vw;
+            padding-right: 12vw;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .contact-section {
+            gap: 3rem;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .contact-section {
+            grid-template-columns: 1fr;
+            padding-top: calc(var(--nav-height) + 2.5rem);
+            padding-bottom: 4rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            gap: 2.5rem;
+            align-items: start;
+        }
+        .contact-title {
+            font-size: clamp(3.5rem, 18vw, 5.5rem);
+        }
+        .contact-intro {
+            max-width: 100%;
+        }
+        .form-card {
+            padding: 2rem 1.5rem;
+        }
+        .form-row {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contact-title {
+            font-size: clamp(3rem, 20vw, 4.5rem);
+        }
+        .form-card {
+            padding: 1.5rem 1.25rem;
+        }
+        .form-submit {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .contact-section {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        [data-reveal] {
+            animation: none;
+            opacity: 1;
+            transform: none;
+        }
+    }
+</style>

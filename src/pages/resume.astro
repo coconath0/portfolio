@@ -42,17 +42,17 @@ import Footer from '../components/Footer.astro';
 
         <div class="timeline">
           <div class="timeline-item">
-            <span class="tl-date">2022–2026</span>
+            <span class="tl-date">2023–2026</span>
             <div class="tl-content">
-              <p class="tl-title">B.S. Computer Science — Texas State University</p>
-              <p class="tl-sub">San Marcos, TX · GPA 3.X · Expected May 2026</p>
+              <p class="tl-title">B.S. Computer Science - Texas State University</p>
+              <p class="tl-sub">San Marcos, TX . GPA 3.62 . Expected May 2026</p>
             </div>
           </div>
           <div class="timeline-item">
-            <span class="tl-date">2018–2022</span>
+            <span class="tl-date">2020–2023</span>
             <div class="tl-content">
-              <p class="tl-title">High School Diploma</p>
-              <p class="tl-sub">Lorem ipsum school name, City, TX</p>
+              <p class="tl-title">Engineer Degree, Systems Engineering - University of Lima</p>
+              <p class="tl-sub">Lima, PE . Transferred</p>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ import Footer from '../components/Footer.astro';
           </div>
           <div class="skill-group">
             <p class="skill-label">Tools</p>
-            <p class="skill-items">Git, GitHub, VS Code, Figma, IntelliJ, Docker</p>
+            <p class="skill-items">Git, GitHub, VS Code, Figma</p>
           </div>
           <div class="skill-group">
             <p class="skill-label">Front-End</p>
@@ -133,14 +133,28 @@ import Footer from '../components/Footer.astro';
           <div class="exp-item">
             <span class="exp-date">2022–2023</span>
             <div class="exp-content">
-              <p class="exp-title">IT Support Technician — Lorem Org</p>
-              <p class="exp-sub">Lorem ipsum support scope and tools used</p>
+              <p class="exp-title">Lorem ipsum clients and technologies</p>
+              <p class="exp-sub">Lorem ipsum clients and technologies</p>
             </div>
           </div>
           <div class="exp-item">
             <span class="exp-date">2021–2022</span>
             <div class="exp-content">
-              <p class="exp-title">Freelance Web Developer</p>
+              <p class="exp-title">Lorem ipsum clients and technologies</p>
+              <p class="exp-sub">Lorem ipsum clients and technologies</p>
+            </div>
+          </div>
+            <div class="exp-item">
+            <span class="exp-date">2021–2022</span>
+            <div class="exp-content">
+              <p class="exp-title">Lorem ipsum clients and technologies</p>
+              <p class="exp-sub">Lorem ipsum clients and technologies</p>
+            </div>
+          </div>
+            <div class="exp-item">
+            <span class="exp-date">2021–2022</span>
+            <div class="exp-content">
+              <p class="exp-title">Lorem ipsum clients and technologies</p>
               <p class="exp-sub">Lorem ipsum clients and technologies</p>
             </div>
           </div>
@@ -244,7 +258,7 @@ import Footer from '../components/Footer.astro';
   top: 0;
   bottom: 0;
   left: 0;
-  right: -260px; /* extends past the card right edge so "ME" overflows into section */
+  right: -280px; /* extends past the card right edge so "ME" overflows into section */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -252,7 +266,7 @@ import Footer from '../components/Footer.astro';
   pointer-events: none;
   user-select: none;
   gap: 0;
-  z-index: 0;
+  z-index: 3;
 }
 .card-watermark span {
   font-family: var(--font-display);
@@ -332,7 +346,7 @@ import Footer from '../components/Footer.astro';
   gap: 0;
   border-left: 2px solid var(--olive);
   padding-left: 1.5rem;
-  margin-left: 0.5rem;
+  margin-left: 20rem;
 }
 
 .timeline-item {
@@ -590,22 +604,20 @@ import Footer from '../components/Footer.astro';
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 7rem;
+  padding-top: 10rem;
 }
 
 .feature-polaroid {
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   background: var(--white);
   padding: 10px 10px 56px;
   border-radius: 2px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-  transform: rotate(-2.5deg);
   transition: transform 0.28s ease, box-shadow 0.28s ease;
   cursor: default;
 }
 .feature-polaroid:hover {
-  transform: rotate(-2.5deg) scale(1.04) translateY(-8px);
   box-shadow: 0 20px 48px rgba(0,0,0,0.2);
 }
 
@@ -619,7 +631,7 @@ import Footer from '../components/Footer.astro';
 
 .feature-caption {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: 600;
   color: var(--blush);

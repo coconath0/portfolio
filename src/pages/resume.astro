@@ -24,15 +24,12 @@ import Footer from '../components/Footer.astro';
           <div class="card-watermark" aria-hidden="true">
             <span>RESUME</span><span>RESUME</span><span>RESUME</span><span>RESUME</span><span>RESUME</span><span>RESUME</span>
           </div>
-          <!-- Resume preview image placeholder — swap with actual resume screenshot -->
-          <div class="card-preview-placeholder" aria-hidden="true">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          </div>
+          <img src="/documents/resume-mock.png" alt="Resume preview" class="card-preview-img" />
         </div>
 
         <div class="resume-btns">
           <a href="/documents/Resume_nathaly-ingol-leon.pdf" download class="btn-download">Download</a>
-          <a href="/documents/Resume_nathaly-ingol-leon.pdf" target="_blank" rel="noopener" class="btn-virtual">Virtual Resume</a>
+          <a href="/virtual-resume" class="btn-virtual" target="_blank">Virtual Resume</a>
         </div>
       </div>
 
@@ -254,7 +251,7 @@ import Footer from '../components/Footer.astro';
   pointer-events: none;
   user-select: none;
   gap: 0;
-  z-index: 3;
+  z-index: 2;
 }
 .card-watermark span {
   font-family: var(--font-display);
@@ -277,10 +274,15 @@ import Footer from '../components/Footer.astro';
 }
 /* Swap placeholder with <img class="card-preview-img"> when you have a screenshot */
 .resume-card img.card-preview-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   display: block;
+  border-radius: 8px;
+  z-index: 0;
 }
 
 .resume-btns {

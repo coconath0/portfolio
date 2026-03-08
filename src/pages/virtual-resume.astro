@@ -1,0 +1,824 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<BaseLayout
+    title="Virtual Resume | Nathaly Ingol"
+    description="Interactive virtual resume of Nathaly Ingol - CS senior at Texas State University. Education, experience, projects, skills, awards, and contact."
+>
+    <Navbar />
+
+    <main class="vr-page">
+        <div class="vr-doc">
+            <!-- ══════════ HEADER ══════════ -->
+            <header class="vr-header">
+                <div class="vr-header-left">
+                    <h1 class="vr-name">Nathaly<br />Ingol</h1>
+                    <p class="vr-title">
+                        Software Engineer &nbsp;.&nbsp; CS Senior @ TXST
+                    </p>
+                    <p class="vr-about">
+                        Computer Science senior at Texas State University with a
+                        background in full-stack development, data engineering,
+                        and AI/ML. Experienced across internships, research, and
+                        teaching roles. Passionate about building clean,
+                        user-centered software and making technology accessible.
+                    </p>
+                    <ul class="vr-contact-bar">
+                        <li>
+                            <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                ><path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.08 5.18 2 2 0 015.09 3h3a2 2 0 012 1.72c.13 1 .37 1.97.72 2.9a2 2 0 01-.45 2.11L9.09 11a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.93.35 1.9.59 2.9.72A2 2 0 0122 16.92z"
+                                ></path></svg
+                            >
+                            (737) 336-4639
+                        </li>
+                        <li>
+                            <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                ><path
+                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                ></path><polyline points="22,6 12,13 2,6"
+                                ></polyline></svg
+                            >
+                            naingol10@gmail.com
+                        </li>
+                        <li>
+                            <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                ><path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                                ></path></svg
+                            >
+                            github.com/coconath0
+                        </li>
+                        <li>
+                            <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                ><path
+                                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"
+                                ></path><circle cx="12" cy="10" r="3"
+                                ></circle></svg
+                            >
+                            Austin, TX
+                        </li>
+                    </ul>
+                </div>
+                <div class="vr-header-right">
+                    <div class="vr-photo-frame">
+                        <img
+                            src="/images/me/IMG_5465.jpg"
+                            alt="Nathaly Ingol"
+                            class="vr-photo"
+                        />
+                    </div>
+                    <a
+                        href="/documents/Resume_nathaly-ingol-leon.pdf"
+                        download
+                        class="vr-download-btn"
+                    >
+                        <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            ><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"
+                            ></path><polyline points="7 10 12 15 17 10"
+                            ></polyline><line x1="12" y1="15" x2="12" y2="3"
+                            ></line></svg
+                        >
+                        Download PDF
+                    </a>
+                </div>
+            </header>
+
+            <div class="vr-divider"></div>
+
+            <!-- ══════════ BODY ══════════ -->
+            <div class="vr-body">
+                <!-- ─── LEFT COLUMN ─────────────────────── -->
+                <div class="vr-left">
+                    <!-- EDUCATION -->
+                    <section class="vr-section">
+                        <h2 class="vr-section-title">Education</h2>
+                        <div class="vr-edu-item">
+                            <p class="vr-edu-degree">B.S. Computer Science</p>
+                            <p class="vr-edu-school">
+                                Texas State University &nbsp;|&nbsp; 2023–2026
+                            </p>
+                            <p class="vr-edu-detail">
+                                San Marcos, TX . GPA 3.62 . Expected May 2026
+                            </p>
+                        </div>
+                        <div class="vr-edu-item">
+                            <p class="vr-edu-degree">
+                                Engineer Degree, Systems Engineering
+                            </p>
+                            <p class="vr-edu-school">
+                                University of Lima &nbsp;|&nbsp; 2020–2023
+                            </p>
+                            <p class="vr-edu-detail">Lima, PE . Transferred</p>
+                        </div>
+                    </section>
+
+                    <!-- EXPERIENCE -->
+                    <section class="vr-section">
+                        <h2 class="vr-section-title">Experience</h2>
+
+                        <div class="vr-exp-item">
+                            <p class="vr-exp-role">Test Engineer Intern</p>
+                            <p class="vr-exp-org">
+                                Date Maroon &nbsp;|&nbsp; Feb 2026–Present
+                            </p>
+                            <p class="vr-exp-desc">
+                                Conducting UX &amp; mobile app testing for a
+                                values-first iOS dating app, documenting bugs,
+                                auditing UI/UX flows, and delivering weekly
+                                NPS-scored improvement reports.
+                            </p>
+                        </div>
+
+                        <div class="vr-exp-item">
+                            <p class="vr-exp-role">
+                                Software Engineering Teaching Assistant
+                            </p>
+                            <p class="vr-exp-org">
+                                Texas State University &nbsp;|&nbsp; Jan
+                                2026–Present
+                            </p>
+                            <p class="vr-exp-desc">
+                                Assessing team-based software engineering
+                                projects on technical execution and design
+                                patterns, delivering detailed feedback on system
+                                architecture, code maintainability, and testing
+                                practices.
+                            </p>
+                        </div>
+
+                        <div class="vr-exp-item">
+                            <p class="vr-exp-role">
+                                Computer Security &amp; Advanced Security Grader
+                            </p>
+                            <p class="vr-exp-org">
+                                Texas State University &nbsp;|&nbsp; Jan
+                                2026–Present
+                            </p>
+                            <p class="vr-exp-desc">
+                                Evaluating undergraduate and graduate coursework
+                                for Computer Security courses, grading complex
+                                technical assignments and collaborating with
+                                faculty to maintain consistent standards.
+                            </p>
+                        </div>
+
+                        <div class="vr-exp-item">
+                            <p class="vr-exp-role">
+                                R&amp;D Software Engineer Intern
+                            </p>
+                            <p class="vr-exp-org">
+                                PowerToFly &nbsp;|&nbsp; Jan 2026
+                            </p>
+                            <p class="vr-exp-desc">
+                                Designed AI literacy curriculum for
+                                non-technical professionals and ran comparative
+                                LLM testing to build optimized,
+                                beginner-friendly interactive modules.
+                            </p>
+                        </div>
+
+                        <div class="vr-exp-item">
+                            <p class="vr-exp-role">Fellow Intern</p>
+                            <p class="vr-exp-org">
+                                Breakthrough Tech – Cornell University
+                                &nbsp;|&nbsp; Nov 2025–Jan 2026
+                            </p>
+                            <p class="vr-exp-desc">
+                                Selected for the competitive Winter 2026
+                                Sprinternship; completed intensive workshops in
+                                leadership, project management, and professional
+                                development.
+                            </p>
+                        </div>
+
+                        <div class="vr-exp-item">
+                            <p class="vr-exp-role">AI Trainer Expert</p>
+                            <p class="vr-exp-org">
+                                Handshake &nbsp;|&nbsp; Nov 2025–Jan 2026
+                            </p>
+                            <p class="vr-exp-desc">
+                                Analyzed LLM outputs for accuracy, built and
+                                tested React components via prompt engineering,
+                                and executed multimodal data annotation across
+                                audio, video, and image tasks.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- PROJECTS -->
+                    <section class="vr-section">
+                        <h2 class="vr-section-title">Projects</h2>
+
+                        <div class="vr-proj-item">
+                            <p class="vr-proj-name">
+                                Personal Portfolio <span class="vr-proj-tech"
+                                    >Astro . Tailwind CSS . TypeScript</span
+                                >
+                            </p>
+                            <p class="vr-exp-desc">
+                                Designed and built a fully responsive personal
+                                portfolio site with custom animations, an AI
+                                assistant powered by the Gemini API, and SEO
+                                optimization.
+                            </p>
+                        </div>
+
+                        <div class="vr-proj-item">
+                            <p class="vr-proj-name">
+                                TXST Datathon 2026 - 2nd Place <span
+                                    class="vr-proj-tech"
+                                    >Python . Pandas . Plotly . Scikit-learn</span
+                                >
+                            </p>
+                            <p class="vr-exp-desc">
+                                Built a data pipeline and interactive dashboard
+                                analyzing real-world dataset for the Bobcat Data
+                                Challenge; placed 2nd overall out of all
+                                competing teams.
+                            </p>
+                        </div>
+
+                        <div class="vr-proj-item">
+                            <p class="vr-proj-name">
+                                Pet Adoption System <span class="vr-proj-tech"
+                                    >Node.js . REST API . JavaScript . HTML/CSS</span
+                                >
+                            </p>
+                            <p class="vr-exp-desc">
+                                Built a framework-free full-stack app with pure Node.js, full CRUD operations, real-time search, and AI-ready data architecture for future LLM-based matchmaking.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- ─── RIGHT COLUMN ────────────────────── -->
+                <div class="vr-right">
+                    <!-- SKILLS -->
+                    <section class="vr-section">
+                        <h2 class="vr-section-title">Skills</h2>
+                        <div class="vr-skills-tags">
+                            <span>Java</span><span>Python</span><span
+                                >JavaScript</span
+                            >
+                            <span>TypeScript</span><span>C++</span><span
+                                >SQL</span
+                            >
+                            <span>React</span><span>Astro</span><span
+                                >Node.js</span
+                            >
+                            <span>PostgreSQL</span><span>MongoDB</span><span
+                                >Firebase</span
+                            >
+                            <span>Git / GitHub</span><span>Figma</span>
+                            <span>Pandas</span><span>Scikit-learn</span>
+                            <span>REST APIs</span><span>Tailwind CSS</span>
+                        </div>
+                    </section>
+
+                    <!-- AWARDS & HONORS -->
+                    <section class="vr-section">
+                        <h2 class="vr-section-title">Awards &amp; Honors</h2>
+                        <div class="vr-award-item">
+                            <p class="vr-award-name">
+                                2nd Place - TXST Open Datathon 2026
+                            </p>
+                            <p class="vr-award-org">
+                                Texas State University, 2026
+                            </p>
+                        </div>
+                        <div class="vr-award-item">
+                            <p class="vr-award-name">President's List</p>
+                            <p class="vr-award-org">Fall 2025</p>
+                        </div>
+                        <div class="vr-award-item">
+                            <p class="vr-award-name">Dean's List</p>
+                            <p class="vr-award-org">
+                                Fall 2023, Fall 2024, Fall 2025
+                            </p>
+                        </div>
+                        <div class="vr-award-item">
+                            <p class="vr-award-name">
+                                Phi Eta Sigma National Honor Society <em
+                                    >(Historian)</em
+                                >
+                            </p>
+                            <p class="vr-award-org">Texas State University</p>
+                        </div>
+                        <div class="vr-award-item">
+                            <p class="vr-award-name">
+                                Alpha Sigma Lambda National Honor Society
+                            </p>
+                            <p class="vr-award-org">Texas State University</p>
+                        </div>
+                        <div class="vr-award-item">
+                            <p class="vr-award-name">
+                                Upper Fifth of Class - Systems Engineering
+                            </p>
+                            <p class="vr-award-org">
+                                Universidad de Lima, 2020–2023
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- VOLUNTEER -->
+                    <section class="vr-section">
+                        <h2 class="vr-section-title">Volunteer</h2>
+                        <div class="vr-award-item">
+                            <p class="vr-award-name">
+                                Community Manager - By My Side
+                            </p>
+                            <p class="vr-award-org">Dec 2025–Present</p>
+                            <p class="vr-exp-desc">
+                                Managing social media, designing branded
+                                visuals, and writing SEO-optimized mental health
+                                content to promote free emotional support
+                                resources.
+                            </p>
+                        </div>
+                        <div class="vr-award-item">
+                            <p class="vr-award-name">
+                                Data Quality Analyst / Indexer - FamilySearch
+                            </p>
+                            <p class="vr-award-org">Oct 2025–Present</p>
+                            <p class="vr-exp-desc">
+                                Contributing to large-scale genealogical data
+                                improvement, indexing historical records and
+                                ensuring data accuracy across a global database.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- CONTACT -->
+                    <section class="vr-section">
+                        <h2 class="vr-section-title">Contact</h2>
+                        <ul class="vr-contact-list">
+                            <li>
+                                <span class="vr-contact-label">Email</span>
+                                <span>naingol10@gmail.com</span>
+                            </li>
+                            <li>
+                                <span class="vr-contact-label">GitHub</span>
+                                <a
+                                    href="https://github.com/coconath0"
+                                    target="_blank"
+                                    rel="noopener">github.com/coconath0</a
+                                >
+                            </li>
+                            <li>
+                                <span class="vr-contact-label">LinkedIn</span>
+                                <a
+                                    href="https://linkedin.com/in/nathalyingol"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >linkedin.com/in/nathaly-ingol-leon/</a
+                                >
+                            </li>
+                            <li>
+                                <span class="vr-contact-label">Location</span>
+                                <span>Austin, TX</span>
+                            </li>
+                            <li>
+                                <span class="vr-contact-label">Website</span>
+                                <a
+                                    href="https://nathalyingol.netlify.app"
+                                    target="_blank"
+                                    rel="noopener">nathalyingol.netlify.app</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+</BaseLayout>
+
+<style>
+    /* ══════════════════════════════════════════
+   PAGE WRAPPER
+   ══════════════════════════════════════════ */
+    .vr-page {
+        background: var(--olive);
+        min-height: 100vh;
+        padding: calc(var(--nav-height) + 2.5rem) 2rem 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* ══════════════════════════════════════════
+   DOCUMENT CARD
+   ══════════════════════════════════════════ */
+    .vr-doc {
+        background: var(--cream);
+        max-width: 960px;
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: 0 8px 48px rgba(0, 0, 0, 0.22);
+        padding: 3.5rem 4rem;
+    }
+
+    /* ══════════════════════════════════════════
+   HEADER
+   ══════════════════════════════════════════ */
+    .vr-header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 3rem;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    .vr-name {
+        font-family: var(--font-display);
+        font-size: clamp(3rem, 5vw, 6rem);
+        line-height: 0.9;
+        color: var(--olive-dark);
+        letter-spacing: 0.01em;
+        margin: 0 0 0.6rem;
+    }
+
+    .vr-title {
+        font-family: var(--font-body);
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        color: var(--olive-dark);
+        margin-bottom: 1rem;
+    }
+
+    .vr-about {
+        font-size: 0.88rem;
+        color: var(--text-dark);
+        line-height: 1.65;
+        margin-bottom: 1.25rem;
+        max-width: 480px;
+    }
+
+    .vr-contact-bar {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+    }
+    .vr-contact-bar li {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.8rem;
+        color: var(--brown);
+    }
+    .vr-contact-bar svg {
+        opacity: 0.7;
+        flex-shrink: 0;
+    }
+
+    /* Photo + download */
+    .vr-header-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.85rem;
+    }
+
+    .vr-photo-frame {
+        width: 160px;
+        height: 190px;
+        overflow: hidden;
+        border-radius: 2px;
+        border: 3px solid var(--olive);
+        box-shadow: 4px 4px 0 var(--olive-dark);
+        flex-shrink: 0;
+    }
+    .vr-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        filter: grayscale(30%);
+    }
+
+    .vr-download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        background: var(--olive-dark);
+        color: var(--cream);
+        font-size: 0.78rem;
+        font-weight: 600;
+        padding: 0.5rem 1.1rem;
+        border-radius: 999px;
+        white-space: nowrap;
+        transition:
+            opacity 0.2s,
+            transform 0.2s;
+    }
+    .vr-download-btn:hover {
+        opacity: 0.85;
+        transform: translateY(-1px);
+    }
+
+    /* ══════════════════════════════════════════
+   DIVIDER
+   ══════════════════════════════════════════ */
+    .vr-divider {
+        height: 2px;
+        background: var(--olive);
+        border-radius: 1px;
+        margin-bottom: 2.5rem;
+        opacity: 0.5;
+    }
+
+    /* ══════════════════════════════════════════
+   TWO-COLUMN BODY
+   ══════════════════════════════════════════ */
+    .vr-body {
+        display: grid;
+        grid-template-columns: 1.55fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+
+    /* ══════════════════════════════════════════
+   SECTION BASE
+   ══════════════════════════════════════════ */
+    .vr-section {
+        margin-bottom: 2rem;
+    }
+
+    .vr-section-title {
+        font-family: var(--font-body);
+        font-size: 0.7rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--olive-dark);
+        border-bottom: 1.5px solid var(--olive);
+        padding-bottom: 0.35rem;
+        margin-bottom: 1rem;
+    }
+
+    /* ══════════════════════════════════════════
+   EDUCATION
+   ══════════════════════════════════════════ */
+    .vr-edu-item {
+        margin-bottom: 1rem;
+    }
+    .vr-edu-degree {
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        margin-bottom: 0.1rem;
+    }
+    .vr-edu-school {
+        font-size: 0.82rem;
+        font-style: italic;
+        color: var(--brown);
+        margin-bottom: 0.1rem;
+    }
+    .vr-edu-detail {
+        font-size: 0.78rem;
+        color: var(--text-dark);
+        opacity: 0.65;
+    }
+
+    /* ══════════════════════════════════════════
+   EXPERIENCE
+   ══════════════════════════════════════════ */
+    .vr-exp-item {
+        margin-bottom: 1.1rem;
+        padding-left: 0.85rem;
+        border-left: 2px solid var(--olive);
+    }
+    .vr-exp-role {
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        margin-bottom: 0.1rem;
+    }
+    .vr-exp-org {
+        font-size: 0.8rem;
+        font-style: italic;
+        color: var(--brown);
+        margin-bottom: 0.3rem;
+    }
+    .vr-exp-desc {
+        font-size: 0.8rem;
+        color: var(--text-dark);
+        line-height: 1.6;
+        opacity: 0.85;
+    }
+
+    /* ══════════════════════════════════════════
+   PROJECTS
+   ══════════════════════════════════════════ */
+    .vr-proj-item {
+        margin-bottom: 1rem;
+        padding-left: 0.85rem;
+        border-left: 2px solid var(--blush);
+    }
+    .vr-proj-name {
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        margin-bottom: 0.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+    .vr-proj-tech {
+        font-size: 0.72rem;
+        font-weight: 500;
+        text-transform: none;
+        letter-spacing: 0;
+        color: var(--olive-dark);
+        background: rgba(139, 154, 90, 0.12);
+        padding: 0.1rem 0.5rem;
+        border-radius: 4px;
+    }
+
+    /* ══════════════════════════════════════════
+   SKILLS TAGS
+   ══════════════════════════════════════════ */
+    .vr-skills-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+    .vr-skills-tags span {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: var(--brown-dark);
+        background: var(--white);
+        border: 1px solid rgba(107, 58, 42, 0.25);
+        border-radius: 999px;
+        padding: 0.28rem 0.75rem;
+    }
+
+    /* ══════════════════════════════════════════
+   AWARDS & VOLUNTEER
+   ══════════════════════════════════════════ */
+    .vr-award-item {
+        margin-bottom: 0.9rem;
+    }
+    .vr-award-name {
+        font-size: 0.84rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        margin-bottom: 0.05rem;
+    }
+    .vr-award-org {
+        font-size: 0.78rem;
+        font-style: italic;
+        color: var(--brown);
+        margin-bottom: 0.2rem;
+    }
+
+    /* ══════════════════════════════════════════
+   CONTACT LIST
+   ══════════════════════════════════════════ */
+    .vr-contact-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+    }
+    .vr-contact-list li {
+        display: flex;
+        flex-direction: column;
+        gap: 0.05rem;
+    }
+    .vr-contact-label {
+        font-size: 0.65rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--olive-dark);
+    }
+    .vr-contact-list span,
+    .vr-contact-list a {
+        font-size: 0.82rem;
+        color: var(--brown);
+    }
+    .vr-contact-list a:hover {
+        color: var(--olive-dark);
+        text-decoration: underline;
+    }
+
+    /* ══════════════════════════════════════════
+   PRINT STYLES
+   ══════════════════════════════════════════ */
+    @media print {
+        .vr-page {
+            background: none;
+            padding: 0;
+        }
+        .vr-doc {
+            box-shadow: none;
+            max-width: 100%;
+            padding: 2rem;
+        }
+    }
+
+    /* ══════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+        .vr-doc {
+            padding: 2.5rem 2.5rem;
+        }
+        .vr-body {
+            gap: 2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .vr-page {
+            padding: calc(var(--nav-height) + 1.5rem) 1rem 3rem;
+        }
+        .vr-doc {
+            padding: 2rem 1.5rem;
+        }
+
+        .vr-header {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        .vr-header-right {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        .vr-photo-frame {
+            width: 110px;
+            height: 130px;
+        }
+
+        .vr-body {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .vr-name {
+            font-size: clamp(2.8rem, 14vw, 4rem);
+        }
+        .vr-about {
+            font-size: 0.82rem;
+        }
+        .vr-contact-bar {
+            gap: 0.4rem 1rem;
+        }
+        .vr-doc {
+            padding: 1.5rem 1rem;
+        }
+    }
+</style>

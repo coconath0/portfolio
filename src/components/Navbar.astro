@@ -148,17 +148,19 @@ const currentPath = Astro.url.pathname;
   const navbar = document.getElementById('navbar');
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
-  window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); });
-
   const mobileClose = document.getElementById('mobileClose');
 
+  if (!navbar || !hamburger || !mobileMenu || !mobileClose) throw new Error('Navbar: required elements not found');
+
+  window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 20); });
+
   function toggleMenu(force?: boolean) {
-    const isOpen = force !== undefined ? force : !hamburger.classList.contains('open');
-    hamburger.classList.toggle('open', isOpen);
-    mobileMenu.classList.toggle('open', isOpen);
-    hamburger.setAttribute('aria-expanded', String(isOpen));
-    hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-    mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+    const isOpen = force !== undefined ? force : !hamburger!.classList.contains('open');
+    hamburger!.classList.toggle('open', isOpen);
+    mobileMenu!.classList.toggle('open', isOpen);
+    hamburger!.setAttribute('aria-expanded', String(isOpen));
+    hamburger!.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    mobileMenu!.setAttribute('aria-hidden', String(!isOpen));
     // Lock scroll without blocking fixed-element clicks (iOS-safe)
     document.documentElement.classList.toggle('menu-open', isOpen);
   }

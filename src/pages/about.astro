@@ -1,0 +1,652 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="About Me | Nathaly Ingol"
+  description="Learn more about Nathaly Ingol — CS senior at Texas State University, photographer, dog mom, and software engineer based in Austin, TX."
+>
+  <Navbar />
+
+  <main>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="about-hero" aria-label="About me intro">
+
+      <!-- Watermark -->
+      <div class="about-watermark" aria-hidden="true">
+        <span>ME</span><span>ME</span><span>ME</span><span>ME</span><span>ME</span>
+      </div>
+
+      <!-- Photo card with floating tags -->
+      <div class="photo-col" data-reveal>
+        <div class="about-photo-card">
+          <img src="/images/me/IMG_1776.jpg" alt="Nathaly Ingol" />
+          <!-- Floating tags -->
+          <span class="tag tag-tl">Computer Science</span>
+          <span class="tag tag-mr">May 5th</span>
+          <span class="tag tag-bl">Peruvian</span>
+        </div>
+      </div>
+
+      <!-- Text col -->
+      <div class="text-col" data-reveal style="--delay:0.15s">
+        <h1 class="about-heading">Hey,<br/>I'm Nathaly</h1>
+        <p class="about-bio">
+          I'm a Computer Science senior at Texas State University with a passion
+          for software engineering, data, and building things that matter.
+          Originally from Peru 🇵🇪, now based in Austin, TX. always looking
+          for the next challenge and a good cup of coffee ☕.
+        </p>
+        <div class="about-btns">
+          <a href="https://github.com/coconath0" target="_blank" rel="noopener" class="btn-filled">GitHub</a>
+          <a href="/resume" class="btn-outline">Jump to Resume</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════ PHOTOGRAPHY ═══════════════ -->
+    <section class="photo-section" aria-label="Photography">
+      <p class="section-quote">"A camera is a Save Button for the mind's eye."</p>
+
+      <div class="insta-grid">
+        <!-- Card 1 -->
+        <article class="insta-card" data-reveal>
+          <div class="insta-header"><span>···</span></div>
+          <div class="insta-img-wrap">
+            <img src="/images/IMG_1680.jpg" alt="Photography" class="insta-photo" />
+          </div>
+          <div class="insta-actions">
+            <div class="insta-left">
+              <!-- Heart -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <!-- Share/paper plane -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </div>
+            <!-- Bookmark -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="insta-card" data-reveal style="--delay:0.1s">
+          <div class="insta-header"><span>···</span></div>
+          <div class="insta-img-wrap">
+            <img src="/images/IMG_4284.jpg" alt="Photography" class="insta-photo" />
+          </div>
+          <div class="insta-actions">
+            <div class="insta-left">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="insta-card" data-reveal style="--delay:0.2s">
+          <div class="insta-header"><span>···</span></div>
+          <div class="insta-img-wrap">
+            <img src="/images/IMG_5278.jpg" alt="Photography" class="insta-photo" />
+          </div>
+          <div class="insta-actions">
+            <div class="insta-left">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════ DOG — HARU ═══════════════ -->
+    <section class="haru-section" aria-label="About Haru">
+      <p class="section-quote haru-quote">"Be the person your dog thinks you are."</p>
+
+      <div class="haru-body">
+        <!-- Left: vertical name + bio -->
+        <div class="haru-left" data-reveal>
+          <span class="haru-name" aria-hidden="true">HARU</span>
+          <p class="haru-bio">
+            Meet Haru, my dog, my shadow, and my favorite study buddy.
+            A Chihuahua with the energy of a puppy and the attitude of a CEO lol! 
+            Responsible for inspiring me on my first Figma project "Patitas." 🐾
+          </p>
+        </div>
+
+        <!-- Right: big polaroid + photobooth strip -->
+        <div class="haru-photos" data-reveal style="--delay:0.15s" aria-label="Photos of Haru">
+          <div class="haru-big-polaroid">
+            <img src="/images/haru/IMG_6405.jpg" alt="Haru" />
+          </div>
+          <div class="haru-strip">
+            <div class="strip-photo"><img src="/images/haru/IMG_1596.jpg" alt="Haru" /></div>
+            <div class="strip-photo"><img src="/images/haru/IMG_3952.jpg" alt="Haru" /></div>
+            <div class="strip-photo"><img src="/images/haru/IMG_4287.jpg" alt="Haru" /></div>
+            <div class="strip-photo"><img src="/images/haru/IMG_4601.jpg" alt="Haru" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ HOBBIES ═══════════════ -->
+    <section class="hobbies-section" aria-label="Hobbies">
+      <p class="section-quote hobbies-quote">"A hobby a day keeps the boredom away."</p>
+
+      <!-- Chibi sticker (replace src when you have the image) -->
+      <img
+        src="/images/smiski.png"
+        alt="Smiski sticker"
+        class="chibi-sticker"
+        aria-hidden="true"
+        onerror="this.style.display='none'"
+      />
+
+      <div class="hobbies-grid">
+        <article class="hobby-card" data-reveal>
+          <img src="/images/hobbies/IMG_0099.jpg" alt="Hobby" class="hobby-fill-img" />
+        </article>
+        <article class="hobby-card" data-reveal style="--delay:0.1s">
+          <img src="/images/hobbies/IMG_0344.jpg" alt="Hobby" class="hobby-fill-img" />
+        </article>
+        <article class="hobby-card" data-reveal style="--delay:0.2s">
+          <img src="/images/hobbies/IMG_0346.jpg" alt="Hobby" class="hobby-fill-img" />
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+/* ══════════════════════════════════════════
+   ABOUT HERO
+   ══════════════════════════════════════════ */
+.about-hero {
+  min-height: 100svh;
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  background: var(--olive);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  padding-bottom: 4rem;
+}
+
+/* Watermark — confined to left column so it sits over the photo */
+.about-watermark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 30%; /* constrains to ~left 70% → centers over photo column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  user-select: none;
+  gap: 0;
+  z-index: 0;
+}
+.about-watermark span {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 14vw, 13rem);
+  line-height: 0.92;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(245, 240, 232, 0.22);
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+
+/* ── Photo column ────────────────────── */
+.photo-col {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.about-photo-card {
+  position: relative;
+  width: min(240px, 55vw);
+}
+
+.about-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--white);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dark);
+  opacity: 0.6;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+/* Swap placeholder for <img> when ready */
+.about-photo-card img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  display: block;
+}
+
+/* Floating tags */
+.tag {
+  position: absolute;
+  background: var(--blush);
+  color: var(--brown-dark);
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+.tag-tl { top: -0.75rem; left: -1rem; }
+.tag-mr { top: 35%; right: -1.5rem; }
+.tag-bl { bottom: -0.75rem; left: -0.5rem; }
+
+/* ── Text column ─────────────────────── */
+.text-col {
+  position: relative;
+  z-index: 2;
+}
+
+.about-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 900;
+  color: var(--olive-dark);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.about-bio {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.75;
+  color: var(--brown-dark);
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+
+.about-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-filled {
+  background: var(--brown);
+  color: var(--cream);
+  font-weight: 500;
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 16px rgba(107,58,42,0.25);
+}
+.btn-filled:hover { background: var(--brown-dark); transform: translateY(-2px); }
+
+.btn-outline {
+  background: var(--brown-dark);
+  color: var(--cream);
+  font-weight: 500;
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-outline:hover { background: var(--brown); transform: translateY(-2px); }
+
+/* ══════════════════════════════════════════
+   SHARED SECTION STYLES
+   ══════════════════════════════════════════ */
+.section-quote {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-style: italic;
+  color: var(--brown);
+  opacity: 0.8;
+  margin-bottom: 2.5rem;
+}
+
+/* ══════════════════════════════════════════
+   PHOTOGRAPHY SECTION
+   ══════════════════════════════════════════ */
+.photo-section {
+  background: #fdf5f0; /* very light warm blush — matches mockup */
+  padding: 5rem 6vw 5rem;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.insta-card {
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(107,58,42,0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.insta-header {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: var(--text-dark);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.insta-img-wrap {
+  flex: 1;
+}
+
+.insta-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4; /* portrait — matches mockup */
+  background: #ececd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Swap with <img> when ready */
+.insta-photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
+.insta-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  color: var(--text-dark);
+}
+.insta-left { display: flex; gap: 0.75rem; }
+
+/* ══════════════════════════════════════════
+   HARU SECTION
+   ══════════════════════════════════════════ */
+.haru-section {
+  background: var(--blush);
+  padding: 5rem 6vw 5rem;
+  overflow: visible;
+}
+
+.haru-quote { color: var(--brown-dark); }
+
+.haru-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.haru-left {
+  display: flex;
+  flex-direction: row; /* HARU vertical text + bio side by side */
+  align-items: center;
+  gap: 2rem;
+}
+
+.haru-name {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 10vw, 9rem);
+  line-height: 0.92;
+  color: var(--brown-dark);
+  letter-spacing: 0.05em;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  flex-shrink: 0;
+}
+
+.haru-bio {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--brown-dark);
+  max-width: 280px;
+}
+
+/* Polaroid stack */
+.haru-photos {
+  position: relative;
+  min-height: 480px;
+  overflow: visible;
+}
+
+/* Large polaroid — tilted clockwise, sits behind */
+.haru-big-polaroid {
+  position: absolute;
+  right: 0;
+  top: 1.5rem;
+  width: min(240px, 38vw);
+  background: var(--white);
+  padding: 12px 12px 52px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border-radius: 2px;
+  transform: rotate(20deg);
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.haru-big-polaroid:hover {
+  transform: rotate(12deg) scale(1.05) translateY(-10px);
+  box-shadow: 0 22px 52px rgba(0,0,0,0.26);
+  z-index: 5;
+}
+.haru-big-polaroid img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
+/* Photobooth strip — overlaps the big polaroid's bottom-left corner */
+.haru-strip {
+  position: absolute;
+  right: min(180px, 28vw); /* sits against the left side of the big polaroid */
+  bottom: 0;
+  width: min(108px, 22vw);
+  background: var(--white);
+  padding: 7px 7px 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border-radius: 2px;
+  transform: rotate(-20deg);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.haru-strip:hover {
+  transform: rotate(-9deg) scale(1.05) translateY(-10px);
+  box-shadow: 0 22px 52px rgba(0,0,0,0.26);
+  z-index: 5;
+}
+.strip-photo img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+/* ══════════════════════════════════════════
+   HOBBIES SECTION
+   ══════════════════════════════════════════ */
+.hobbies-section {
+  background: var(--cream); /* warm off-white, matches mockup */
+  padding: 5rem 6vw 5rem;
+  position: relative;
+}
+
+.hobbies-quote { color: var(--olive-dark); }
+
+.chibi-sticker {
+  position: absolute;
+  top: 1.5rem;
+  right: 3vw;
+  width: clamp(80px, 10vw, 120px);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hobbies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.5rem;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem 0 2.5rem;
+}
+
+.hobby-card {
+  background: var(--white);
+  padding: 10px 10px 56px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.14);
+  border-radius: 2px;
+  width: min(280px, 70vw);
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.hobby-card:nth-child(1) { transform: rotate(-4deg); }
+.hobby-card:nth-child(2) { transform: rotate(2.5deg); }
+.hobby-card:nth-child(3) { transform: rotate(-2deg); }
+.hobby-card:nth-child(1):hover { transform: rotate(-4deg) scale(1.05) translateY(-8px); box-shadow: 0 20px 48px rgba(0,0,0,0.2); }
+.hobby-card:nth-child(2):hover { transform: rotate(2.5deg) scale(1.05) translateY(-8px); box-shadow: 0 20px 48px rgba(0,0,0,0.2); }
+.hobby-card:nth-child(3):hover { transform: rotate(-2deg) scale(1.05) translateY(-8px); box-shadow: 0 20px 48px rgba(0,0,0,0.2); }
+
+.hobby-fill-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Reveal animation ──────────────────── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: revealUp 0.7s cubic-bezier(.22,1,.36,1) forwards;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes revealUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════ */
+
+/* ── Wide desktop (≥1440px) ─────────────── */
+@media (min-width: 1440px) {
+  .about-hero { padding-left: 10vw; padding-right: 10vw; gap: 4rem; }
+  .photo-section, .haru-section, .hobbies-section { padding-left: 10vw; padding-right: 10vw; }
+}
+
+/* ── Laptop (≤1024px) ───────────────────── */
+@media (max-width: 1024px) {
+  .about-hero { padding-left: 4vw; padding-right: 4vw; gap: 2rem; }
+  .about-heading { font-size: clamp(2.4rem, 5.5vw, 4rem); }
+  .haru-body { gap: 2rem; }
+}
+
+/* ── Tablet portrait / Large phones (≤768px) */
+@media (max-width: 768px) {
+  /* Hero — stack vertically */
+  .about-hero {
+    grid-template-columns: 1fr;
+    padding-top: calc(var(--nav-height) + 2rem);
+    padding-bottom: 3.5rem;
+    text-align: center;
+  }
+  .photo-col { padding-top: 0; }
+  .about-photo-card { width: min(200px, 55vw); margin: 0 auto; }
+  .text-col { display: flex; flex-direction: column; align-items: center; }
+  .about-bio { text-align: left; }
+  .about-btns { justify-content: center; }
+  .tag-mr { right: -0.75rem; }
+
+  /* Photography grid — 1 column */
+  .insta-grid { grid-template-columns: 1fr; max-width: 360px; }
+
+  /* Haru — stack */
+  .haru-body { grid-template-columns: 1fr; }
+  .haru-name {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: clamp(4rem, 20vw, 7rem);
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .haru-left { flex-direction: column; align-items: center; text-align: center; }
+  .haru-bio { max-width: 100%; }
+  .haru-photos { min-height: 340px; }
+  .haru-big-polaroid { width: min(170px, 42vw); right: 0; top: 1rem; }
+  .haru-strip { width: min(88px, 22vw); right: min(110px, 28vw); bottom: 0; }
+
+  /* Hobbies — single column */
+  .hobbies-grid { gap: 2.5rem; }
+  .hobby-card { width: min(240px, 72vw); }
+  .chibi-sticker { width: 64px; top: 1.5rem; }
+}
+
+/* ── Standard phones (≤480px) ──────────── */
+@media (max-width: 480px) {
+  .about-hero { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .photo-section, .haru-section, .hobbies-section {
+    padding: 3.5rem 1.25rem;
+  }
+  .about-heading { font-size: clamp(2.2rem, 14vw, 3.2rem); }
+  .section-quote { font-size: 0.85rem; }
+  .haru-photos { min-height: 280px; }
+  .haru-big-polaroid { width: min(145px, 40vw); padding: 8px 8px 36px; right: -0.5rem; }
+  .haru-strip { width: min(74px, 20vw); padding: 6px 6px 12px; gap: 4px; right: min(95px, 26vw); bottom: 0; }
+  .hobby-card { width: min(210px, 78vw); padding: 8px 8px 44px; }
+}
+
+/* ── Small phones (≤375px) ──────────────── */
+@media (max-width: 375px) {
+  .about-heading { font-size: clamp(2rem, 15vw, 2.8rem); }
+  .btn-filled, .btn-outline { font-size: 0.85rem; padding: 0.65rem 1.4rem; }
+  .haru-photos { min-height: 240px; }
+  .haru-big-polaroid { width: min(120px, 38vw); padding: 7px 7px 28px; right: -0.25rem; }
+  .haru-strip { width: min(62px, 18vw); padding: 5px 5px 10px; gap: 3px; right: min(78px, 24vw); bottom: 0; }
+  .hobby-card { width: min(185px, 80vw); padding: 7px 7px 38px; }
+}
+
+/* ── Reduce motion ──────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { animation: none; opacity: 1; transform: none; }
+}
+</style>

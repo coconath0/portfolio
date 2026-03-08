@@ -27,3 +27,7 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+
+#Images not on github
+
+public/images

@@ -729,7 +729,7 @@ const projects: Project[] = [
 
 /* ══ RESPONSIVE ═════════════════════════════════════════════════ */
 @media (min-width: 1440px) {
-  .carousel-card { flex: 0 0 280px; }
+  .carousel-card { flex: 0 0 290px; }
   .carousel-img  { min-height: 230px; }
   .proj-card     { padding: 2.5rem 3rem; }
 }
@@ -764,14 +764,17 @@ const projects: Project[] = [
 
 @media (max-width: 480px) {
   .hero-watermark { font-size: 22vw; }
-  .carousel-card { flex: 0 0 148px; }
-  .carousel-img  { min-height: 125px; }
+  .carousel-card { flex: 0 0 250px; }
+  .carousel-img  { min-height: 200px; }
   .proj-card  { padding: 1.25rem; }
   .proj-name  { font-size: 1.7rem; }
   .proj-btns  { flex-direction: column; align-items: flex-start; }
 }
 
 @media (max-width: 375px) {
+  .carousel-wrapper { margin-top: 6rem; }
+  .carousel-card { flex: 0 0 250px; }
+  .carousel-img  { min-height: 200px; }
   .proj-card { padding: 1rem; }
   .proj-name { font-size: 1.5rem; }
 }

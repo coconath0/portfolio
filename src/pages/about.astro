@@ -597,8 +597,7 @@ import Footer from '../components/Footer.astro';
   .about-btns { justify-content: center; }
   .tag-mr { right: -0.75rem; }
 
-  /* Photography grid — 1 column */
-  .insta-grid { grid-template-columns: 1fr; max-width: 360px; }
+  
 
   /* Haru — stack */
   .haru-body { grid-template-columns: 1fr; }
@@ -612,8 +611,8 @@ import Footer from '../components/Footer.astro';
   .haru-left { flex-direction: column; align-items: center; text-align: center; }
   .haru-bio { max-width: 100%; }
   .haru-photos { min-height: 340px; }
-  .haru-big-polaroid { width: min(170px, 42vw); right: 0; top: 1rem; }
-  .haru-strip { width: min(88px, 22vw); right: min(110px, 28vw); bottom: 0; }
+  .haru-big-polaroid { width: min(170px, 42vw); right: 200px; top: 1rem; }
+  .haru-strip { width: min(88px, 22vw); right: min(400px, 45vw); bottom: 0; }
 
   /* Hobbies — single column */
   .hobbies-grid { gap: 2.5rem; }
@@ -627,11 +626,14 @@ import Footer from '../components/Footer.astro';
   .photo-section, .haru-section, .hobbies-section {
     padding: 3.5rem 1.25rem;
   }
+  /* Photography grid — 1 column */
+  .insta-grid { grid-template-columns: repeat(2, 1fr);; max-width: 400px; gap: 0.3rem; justify-content: center;}
+
   .about-heading { font-size: clamp(2.2rem, 14vw, 3.2rem); }
   .section-quote { font-size: 0.85rem; }
   .haru-photos { min-height: 280px; }
-  .haru-big-polaroid { width: min(145px, 40vw); padding: 8px 8px 36px; right: -0.5rem; }
-  .haru-strip { width: min(74px, 20vw); padding: 6px 6px 12px; gap: 4px; right: min(95px, 26vw); bottom: 0; }
+  .haru-big-polaroid { width: min(145px, 40vw); padding: 8px 8px 36px; right: 5rem; }
+  .haru-strip { width: min(74px, 20vw); padding: 6px 6px 12px; gap: 4px; right: min(300px, 45vw); bottom: 0; }
   .hobby-card { width: min(210px, 78vw); padding: 8px 8px 44px; }
 }
 
@@ -640,8 +642,8 @@ import Footer from '../components/Footer.astro';
   .about-heading { font-size: clamp(2rem, 15vw, 2.8rem); }
   .btn-filled, .btn-outline { font-size: 0.85rem; padding: 0.65rem 1.4rem; }
   .haru-photos { min-height: 240px; }
-  .haru-big-polaroid { width: min(120px, 38vw); padding: 7px 7px 28px; right: -0.25rem; }
-  .haru-strip { width: min(62px, 18vw); padding: 5px 5px 10px; gap: 3px; right: min(78px, 24vw); bottom: 0; }
+  .haru-big-polaroid { width: min(120px, 38vw); padding: 7px 7px 28px;}
+  .haru-strip { width: min(62px, 18vw); padding: 5px 5px 10px; gap: 3px; bottom: 0; }
   .hobby-card { width: min(185px, 80vw); padding: 7px 7px 38px; }
 }
 

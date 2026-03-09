@@ -77,9 +77,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://nathalyi
     document.addEventListener('mousemove', (e) => {
       mouseX = e.clientX; mouseY = e.clientY;
       cursor.style.transform = `translate(${mouseX - 6}px, ${mouseY - 6}px)`;
-      setTimeout(() => {
-        ring.style.transform = `translate(${mouseX - 18}px, ${mouseY - 18}px)`;
-      }, 80);
+      ring.style.transform = `translate(${mouseX - 18}px, ${mouseY - 18}px)`;
     });
     document.addEventListener('mousedown', () => { cursor.style.width = '8px'; cursor.style.height = '8px'; });
     document.addEventListener('mouseup', () => { cursor.style.width = '12px'; cursor.style.height = '12px'; });

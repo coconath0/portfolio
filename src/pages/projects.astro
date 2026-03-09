@@ -195,7 +195,7 @@ const projects: Project[] = [
   <Navbar />
   <main>
 
-    <!-- ══ HERO — carousel ══════════════════════════════════════ -->
+    <!-- HERO — carousel ════════-->
     <section class="projects-hero" aria-label="Projects">
       <div class="hero-watermark" aria-hidden="true">PROJECTS</div>
 
@@ -228,7 +228,7 @@ const projects: Project[] = [
       <p class="hero-tagline">Code. Design. Create.</p>
     </section>
 
-    <!-- ══ PROJECT DETAIL SECTIONS ══════════════════════════════ -->
+    <!-- PROJECT DETAIL SECTIONS -->
     {projects.map((p) => (
       <section class="project-section" id={`project-${p.id}`} aria-label={p.title} style={`background:${p.sectionBg};`}>
         <div class:list={["proj-grid", `layout-${p.layout}`]}>
@@ -259,7 +259,7 @@ const projects: Project[] = [
 
           <!-- Tech card -->
           <!--
-            ══ TECH DISPLAY: two versions, both rendered ══
+            TECH DISPLAY: two versions, both rendered 
             Icon badges are shown by default; pill tags are hidden.
             To SWITCH to pill tags → in the <style> block below, set:
               .tech-icons-row { display: none; }
@@ -327,7 +327,7 @@ const projects: Project[] = [
 </BaseLayout>
 
 <style>
-/* ══ HERO ═══════════════════════════════════════════════════════ */
+/* HERO */
 .projects-hero {
   position: relative;
   background: var(--olive);
@@ -450,7 +450,7 @@ const projects: Project[] = [
   z-index: 1;
 }
 
-/* ══ PROJECT SECTIONS ═══════════════════════════════════════════ */
+/* PROJECT SECTIONS */
 .project-section {
   padding: 1.5rem 6vw 3rem;
 }
@@ -727,7 +727,7 @@ const projects: Project[] = [
   color: var(--olive-dark);
 }
 
-/* ══ RESPONSIVE ═════════════════════════════════════════════════ */
+/* RESPONSIVE */
 @media (min-width: 1440px) {
   .carousel-card { flex: 0 0 290px; }
   .carousel-img  { min-height: 230px; }

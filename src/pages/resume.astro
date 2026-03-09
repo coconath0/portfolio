@@ -12,7 +12,7 @@ import Footer from '../components/Footer.astro';
 
   <main>
 
-    <!-- ═══════════════ SECTION 1: RESUME HEADER ═══════════════ -->
+    <!-- SECTION 1: RESUME HEADER -->
     <section class="resume-hero" aria-label="Resume">
 
       <!-- Left: title + preview card + buttons -->
@@ -57,7 +57,7 @@ import Footer from '../components/Footer.astro';
 
     </section>
 
-    <!-- ═══════════════ SECTION 2: SKILLS + EXPERIENCE ═══════════════ -->
+    <!-- SECTION 2: SKILLS + EXPERIENCE -->
     <section class="skills-exp-section" aria-label="Skills and Experience">
 
       <!-- Left: Technical Skills -->
@@ -146,7 +146,7 @@ import Footer from '../components/Footer.astro';
 
     </section>
 
-    <!-- ═══════════════ SECTION 3: AWARDS + VOLUNTEER + FEATURE ═══════════════ -->
+    <!-- SECTION 3: AWARDS + VOLUNTEER + FEATURE -->
     <section class="awards-section" aria-label="Awards and Volunteer">
 
       <!-- Left: Awards & Volunteer -->
@@ -190,9 +190,7 @@ import Footer from '../components/Footer.astro';
 </BaseLayout>
 
 <style>
-/* ══════════════════════════════════════════
-   SECTION 1 — RESUME HERO
-   ══════════════════════════════════════════ */
+/* SECTION 1 — RESUME HERO */
 .resume-hero {
   background: var(--cream);
   padding-top: calc(var(--nav-height) + 3rem);
@@ -206,7 +204,7 @@ import Footer from '../components/Footer.astro';
   overflow: hidden;
 }
 
-/* ── Left column ───────────────────────── */
+/* ── Left column ── */
 .resume-left {
   display: flex;
   flex-direction: column;
@@ -315,7 +313,7 @@ import Footer from '../components/Footer.astro';
 }
 .btn-virtual:hover { opacity: 0.85; transform: translateY(-2px); }
 
-/* ── Education timeline ────────────────── */
+/* Education timeline */
 .education-col {
   padding-top: 1rem;
   padding-left: 2rem;
@@ -379,9 +377,7 @@ import Footer from '../components/Footer.astro';
   font-style: italic;
 }
 
-/* ══════════════════════════════════════════
-   SECTION 2 — SKILLS + EXPERIENCE
-   ══════════════════════════════════════════ */
+/* SECTION 2 — SKILLS + EXPERIENCE */
 .skills-exp-section {
   background: var(--brown-dark);
   display: grid;
@@ -395,7 +391,7 @@ import Footer from '../components/Footer.astro';
   padding-bottom: 0;
 }
 
-/* ── Skills column ─────────────────────── */
+/* Skills column */
 .skills-col {
   padding: 4rem 4rem 4rem 6vw;
 }
@@ -448,7 +444,7 @@ import Footer from '../components/Footer.astro';
   border-radius: 999px;
 }
 
-/* ── Experience card ───────────────────── */
+/* Experience card */
 .exp-card {
   background: var(--olive-dark);
   border-radius: 16px;
@@ -530,9 +526,7 @@ import Footer from '../components/Footer.astro';
   margin-bottom: 0;
 }
 
-/* ══════════════════════════════════════════
-   SECTION 3 — AWARDS + VOLUNTEER + FEATURE
-   ══════════════════════════════════════════ */
+/* SECTION 3 — AWARDS + VOLUNTEER + FEATURE */
 .awards-section {
   background: var(--cream);
   /* Top padding = bleed amount (6rem) + breathing room so text never collides with card */
@@ -545,7 +539,7 @@ import Footer from '../components/Footer.astro';
   z-index: 1;
 }
 
-/* ── Awards column ─────────────────────── */
+/* Awards column */
 .awards-heading {
   font-family: var(--font-serif);
   font-size: clamp(1.6rem, 3vw, 2.2rem);
@@ -609,7 +603,7 @@ import Footer from '../components/Footer.astro';
   font-style: italic;
 }
 
-/* ── Feature card ──────────────────────── */
+/* Feature card */
 .feature-col {
   display: flex;
   justify-content: center;
@@ -650,7 +644,7 @@ import Footer from '../components/Footer.astro';
   letter-spacing: 0.02em;
 }
 
-/* ── Reveal animation ──────────────────── */
+/* ── Reveal animation ── */
 [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
@@ -661,17 +655,15 @@ import Footer from '../components/Footer.astro';
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ══════════════════════════════════════════
-   RESPONSIVE
-   ══════════════════════════════════════════ */
+/* RESPONSIVE */
 
-/* ── Wide desktop (≥1440px) ─────────────── */
+/* Wide desktop (≥1440px) */
 @media (min-width: 1440px) {
   .resume-hero, .skills-col, .awards-section { padding-left: 10vw; padding-right: 10vw; }
   .exp-card { padding-right: 10vw; }
 }
 
-/* ── Laptop (≤1024px) ───────────────────── */
+/* Laptop (≤1024px) */
 @media (max-width: 1024px) {
   .resume-hero { gap: 2.5rem; padding-left: 4vw; padding-right: 4vw; }
   .skills-col { padding: 3rem 2.5rem 3rem 4vw; }
@@ -679,7 +671,7 @@ import Footer from '../components/Footer.astro';
   .awards-section { padding-top: 9rem; gap: 2.5rem; padding-left: 4vw; padding-right: 4vw; }
 }
 
-/* ── Tablet (≤768px) ────────────────────── */
+/* Tablet (≤768px) */
 @media (max-width: 768px) {
   .resume-hero {
     grid-template-columns: 1fr;
@@ -708,7 +700,7 @@ import Footer from '../components/Footer.astro';
   .feature-polaroid { max-width: 100%; }
 }
 
-/* ── Phones (≤480px) ────────────────────── */
+/* Phones (≤480px) */
 @media (max-width: 480px) {
   .resume-title { font-size: clamp(3rem, 16vw, 5rem); }
   .skills-heading, .exp-heading { font-size: clamp(1.8rem, 8vw, 2.5rem); }
@@ -719,13 +711,13 @@ import Footer from '../components/Footer.astro';
   .feature-polaroid { max-width: 100%; }
 }
 
-/* ── Smallest phones (≤375px) ───────────── */
+/* Smallest phones (≤375px) */
 @media (max-width: 375px) {
   .resume-hero, .skills-col, .awards-section { padding-left: 1rem; padding-right: 1rem; }
   .tl-date { min-width: 80px; font-size: 0.85rem; }
 }
 
-/* ── Reduce motion ──────────────────────── */
+/* Reduce motion */
 @media (prefers-reduced-motion: reduce) {
   [data-reveal] { animation: none; opacity: 1; transform: none; }
 }

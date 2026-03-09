@@ -12,7 +12,7 @@ import Footer from '../components/Footer.astro';
 
   <main>
 
-    <!-- ═══════════════ HERO ═══════════════ -->
+    <!-- HERO -->
     <section class="about-hero" aria-label="About me intro">
 
       <!-- Watermark -->
@@ -48,7 +48,7 @@ import Footer from '../components/Footer.astro';
 
     </section>
 
-    <!-- ═══════════════ PHOTOGRAPHY ═══════════════ -->
+    <!-- PHOTOGRAPHY -->
     <section class="photo-section" aria-label="Photography">
       <p class="section-quote">"A camera is a Save Button for the mind's eye."</p>
 
@@ -103,7 +103,7 @@ import Footer from '../components/Footer.astro';
       </div>
     </section>
 
-    <!-- ═══════════════ DOG — HARU ═══════════════ -->
+    <!-- DOG — HARU -->
     <section class="haru-section" aria-label="About Haru">
       <p class="section-quote haru-quote">"Be the person your dog thinks you are."</p>
 
@@ -133,7 +133,7 @@ import Footer from '../components/Footer.astro';
       </div>
     </section>
 
-    <!-- ═══════════════ HOBBIES ═══════════════ -->
+    <!-- HOBBIES -->
     <section class="hobbies-section" aria-label="Hobbies">
       <p class="section-quote hobbies-quote">"A hobby a day keeps the boredom away."</p>
 
@@ -165,9 +165,7 @@ import Footer from '../components/Footer.astro';
 </BaseLayout>
 
 <style>
-/* ══════════════════════════════════════════
-   ABOUT HERO
-   ══════════════════════════════════════════ */
+/* ABOUT HERO */
 .about-hero {
   min-height: 100svh;
   min-height: 100vh;
@@ -210,7 +208,7 @@ import Footer from '../components/Footer.astro';
   letter-spacing: 0.04em;
 }
 
-/* ── Photo column ────────────────────── */
+/* Photo column */
 .photo-col {
   position: relative;
   z-index: 2;
@@ -262,7 +260,7 @@ import Footer from '../components/Footer.astro';
 .tag-mr { top: 35%; right: -1.5rem; }
 .tag-bl { bottom: -0.75rem; left: -0.5rem; }
 
-/* ── Text column ─────────────────────── */
+/* Text column */
 .text-col {
   position: relative;
   z-index: 2;
@@ -314,9 +312,7 @@ import Footer from '../components/Footer.astro';
 }
 .btn-outline:hover { background: var(--brown); transform: translateY(-2px); }
 
-/* ══════════════════════════════════════════
-   SHARED SECTION STYLES
-   ══════════════════════════════════════════ */
+/* SHARED SECTION STYLES */
 .section-quote {
   text-align: center;
   font-family: var(--font-serif);
@@ -327,9 +323,7 @@ import Footer from '../components/Footer.astro';
   margin-bottom: 2.5rem;
 }
 
-/* ══════════════════════════════════════════
-   PHOTOGRAPHY SECTION
-   ══════════════════════════════════════════ */
+/* PHOTOGRAPHY SECTION */
 .photo-section {
   background: #fdf5f0; /* very light warm blush — matches mockup */
   padding: 5rem 6vw 5rem;
@@ -389,9 +383,7 @@ import Footer from '../components/Footer.astro';
 }
 .insta-left { display: flex; gap: 0.75rem; }
 
-/* ══════════════════════════════════════════
-   HARU SECTION
-   ══════════════════════════════════════════ */
+/* HARU SECTION */
 .haru-section {
   background: var(--blush);
   padding: 5rem 6vw 5rem;
@@ -499,9 +491,7 @@ import Footer from '../components/Footer.astro';
   display: block;
 }
 
-/* ══════════════════════════════════════════
-   HOBBIES SECTION
-   ══════════════════════════════════════════ */
+/* HOBBIES SECTION */
 .hobbies-section {
   background: var(--cream); /* warm off-white, matches mockup */
   padding: 5rem 6vw 5rem;
@@ -553,7 +543,7 @@ import Footer from '../components/Footer.astro';
   display: block;
 }
 
-/* ── Reveal animation ──────────────────── */
+/* Reveal animation */
 [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
@@ -564,24 +554,22 @@ import Footer from '../components/Footer.astro';
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ══════════════════════════════════════════
-   RESPONSIVE
-   ══════════════════════════════════════════ */
+/* RESPONSIVE */
 
-/* ── Wide desktop (≥1440px) ─────────────── */
+/* Wide desktop (≥1440px) */
 @media (min-width: 1440px) {
   .about-hero { padding-left: 10vw; padding-right: 10vw; gap: 4rem; }
   .photo-section, .haru-section, .hobbies-section { padding-left: 10vw; padding-right: 10vw; }
 }
 
-/* ── Laptop (≤1024px) ───────────────────── */
+/* Laptop (≤1024px) */
 @media (max-width: 1024px) {
   .about-hero { padding-left: 4vw; padding-right: 4vw; gap: 2rem; }
   .about-heading { font-size: clamp(2.4rem, 5.5vw, 4rem); }
   .haru-body { gap: 2rem; }
 }
 
-/* ── Tablet portrait / Large phones (≤768px) */
+/* Tablet portrait / Large phones (≤768px) */
 @media (max-width: 768px) {
   /* Hero — stack vertically */
   .about-hero {
@@ -620,7 +608,7 @@ import Footer from '../components/Footer.astro';
   .chibi-sticker { width: 64px; top: 1.5rem; }
 }
 
-/* ── Standard phones (≤480px) ──────────── */
+/* Standard phones (≤480px) */
 @media (max-width: 480px) {
   .about-hero { padding-left: 1.25rem; padding-right: 1.25rem; }
   .photo-section, .haru-section, .hobbies-section {
@@ -637,7 +625,7 @@ import Footer from '../components/Footer.astro';
   .hobby-card { width: min(210px, 78vw); padding: 8px 8px 44px; }
 }
 
-/* ── Small phones (≤375px) ──────────────── */
+/* Small phones (≤375px) */
 @media (max-width: 375px) {
   .about-heading { font-size: clamp(2rem, 15vw, 2.8rem); }
   .btn-filled, .btn-outline { font-size: 0.85rem; padding: 0.65rem 1.4rem; }
@@ -647,7 +635,7 @@ import Footer from '../components/Footer.astro';
   .hobby-card { width: min(185px, 80vw); padding: 7px 7px 38px; }
 }
 
-/* ── Reduce motion ──────────────────────── */
+/* Reduce motion */
 @media (prefers-reduced-motion: reduce) {
   [data-reveal] { animation: none; opacity: 1; transform: none; }
 }

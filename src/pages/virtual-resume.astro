@@ -11,7 +11,7 @@ import Navbar from "../components/Navbar.astro";
 
     <main class="vr-page">
         <div class="vr-doc">
-            <!-- ══════════ HEADER ══════════ -->
+            <!-- HEADER -->
             <header class="vr-header">
                 <div class="vr-header-left">
                     <h1 class="vr-name">Nathaly<br />Ingol</h1>
@@ -117,9 +117,9 @@ import Navbar from "../components/Navbar.astro";
 
             <div class="vr-divider"></div>
 
-            <!-- ══════════ BODY ══════════ -->
+            <!-- BODY -->
             <div class="vr-body">
-                <!-- ─── LEFT COLUMN ─────────────────────── -->
+                <!-- LEFT COLUMN -->
                 <div class="vr-left">
                     <!-- EDUCATION -->
                     <section class="vr-section">
@@ -352,7 +352,7 @@ import Navbar from "../components/Navbar.astro";
                     </section>
                 </div>
 
-                <!-- ─── RIGHT COLUMN ────────────────────── -->
+                <!-- RIGHT COLUMN -->
                 <div class="vr-right">
                     <!-- SKILLS -->
                     <section class="vr-section">
@@ -495,9 +495,7 @@ import Navbar from "../components/Navbar.astro";
 </BaseLayout>
 
 <style>
-    /* ══════════════════════════════════════════
-   PAGE WRAPPER
-   ══════════════════════════════════════════ */
+    /* PAGE WRAPPER */
     .vr-page {
         background: var(--olive);
         min-height: 100vh;
@@ -507,9 +505,7 @@ import Navbar from "../components/Navbar.astro";
         align-items: flex-start;
     }
 
-    /* ══════════════════════════════════════════
-   DOCUMENT CARD
-   ══════════════════════════════════════════ */
+    /* DOCUMENT CARD */
     .vr-doc {
         background: var(--cream);
         max-width: 960px;
@@ -519,9 +515,7 @@ import Navbar from "../components/Navbar.astro";
         padding: 3.5rem 4rem;
     }
 
-    /* ══════════════════════════════════════════
-   HEADER
-   ══════════════════════════════════════════ */
+    /* HEADER */
     .vr-header {
         display: grid;
         grid-template-columns: 1fr auto;
@@ -622,9 +616,7 @@ import Navbar from "../components/Navbar.astro";
         transform: translateY(-1px);
     }
 
-    /* ══════════════════════════════════════════
-   DIVIDER
-   ══════════════════════════════════════════ */
+    /* DIVIDER */
     .vr-divider {
         height: 2px;
         background: var(--olive);
@@ -633,9 +625,7 @@ import Navbar from "../components/Navbar.astro";
         opacity: 0.5;
     }
 
-    /* ══════════════════════════════════════════
-   TWO-COLUMN BODY
-   ══════════════════════════════════════════ */
+    /* TWO-COLUMN BODY */
     .vr-body {
         display: grid;
         grid-template-columns: 1.55fr 1fr;
@@ -643,9 +633,7 @@ import Navbar from "../components/Navbar.astro";
         align-items: start;
     }
 
-    /* ══════════════════════════════════════════
-   SECTION BASE
-   ══════════════════════════════════════════ */
+    /* SECTION BASE */
     .vr-section {
         margin-bottom: 2rem;
     }
@@ -662,9 +650,7 @@ import Navbar from "../components/Navbar.astro";
         margin-bottom: 1rem;
     }
 
-    /* ══════════════════════════════════════════
-   EDUCATION
-   ══════════════════════════════════════════ */
+    /* EDUCATION */
     .vr-edu-item {
         margin-bottom: 1rem;
     }
@@ -688,9 +674,7 @@ import Navbar from "../components/Navbar.astro";
         opacity: 0.65;
     }
 
-    /* ══════════════════════════════════════════
-   EXPERIENCE
-   ══════════════════════════════════════════ */
+    /* EXPERIENCE */
     .vr-exp-item {
         margin-bottom: 1.1rem;
         padding-left: 0.85rem;
@@ -717,9 +701,7 @@ import Navbar from "../components/Navbar.astro";
         opacity: 0.85;
     }
 
-    /* ══════════════════════════════════════════
-   PROJECTS
-   ══════════════════════════════════════════ */
+    /* PROJECTS */
     .vr-proj-item {
         margin-bottom: 1rem;
         padding-left: 0.85rem;
@@ -748,9 +730,7 @@ import Navbar from "../components/Navbar.astro";
         border-radius: 4px;
     }
 
-    /* ══════════════════════════════════════════
-   SKILLS TAGS
-   ══════════════════════════════════════════ */
+    /* SKILLS TAGS */
     .vr-skills-tags {
         display: flex;
         flex-wrap: wrap;
@@ -766,9 +746,7 @@ import Navbar from "../components/Navbar.astro";
         padding: 0.28rem 0.75rem;
     }
 
-    /* ══════════════════════════════════════════
-   AWARDS & VOLUNTEER
-   ══════════════════════════════════════════ */
+    /* AWARDS & VOLUNTEER */
     .vr-award-item {
         margin-bottom: 0.9rem;
     }
@@ -787,9 +765,7 @@ import Navbar from "../components/Navbar.astro";
         margin-bottom: 0.2rem;
     }
 
-    /* ══════════════════════════════════════════
-   CONTACT LIST
-   ══════════════════════════════════════════ */
+    /* CONTACT LIST */
     .vr-contact-list {
         list-style: none;
         padding: 0;
@@ -820,9 +796,7 @@ import Navbar from "../components/Navbar.astro";
         text-decoration: underline;
     }
 
-    /* ══════════════════════════════════════════
-   PRINT STYLES
-   ══════════════════════════════════════════ */
+    /* PRINT STYLES */
     @media print {
         .vr-page {
             background: none;
@@ -835,9 +809,7 @@ import Navbar from "../components/Navbar.astro";
         }
     }
 
-    /* ══════════════════════════════════════════
-   RESPONSIVE
-   ══════════════════════════════════════════ */
+    /* RESPONSIVE */
     @media (max-width: 1024px) {
         .vr-doc {
             padding: 2.5rem 2.5rem;

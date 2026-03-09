@@ -13,7 +13,7 @@ import CocoChat from '../components/CocoChat';
 
   <main class="asst-page">
 
-    <!-- ── Left panel ── -->
+    <!-- Left panel -->
     <aside class="asst-panel">
       <div class="asst-panel-inner">
         <img src="/images/nath-chibi.png" alt="COCO mascot" class="asst-mascot" />
@@ -56,7 +56,7 @@ import CocoChat from '../components/CocoChat';
       </div>
     </aside>
 
-    <!-- ── Chat panel ── -->
+    <!-- Chat panel -->
     <div class="asst-chat">
       <CocoChat client:load />
     </div>
@@ -67,9 +67,7 @@ import CocoChat from '../components/CocoChat';
 </BaseLayout>
 
 <style>
-/* ═══════════════════════════════════════════════
-   PAGE LAYOUT
-═══════════════════════════════════════════════ */
+/* PAGE LAYOUT */
 .asst-page {
   min-height: 100vh;
   padding-top: var(--nav-height);
@@ -77,9 +75,7 @@ import CocoChat from '../components/CocoChat';
   background: var(--olive-dark);
 }
 
-/* ═══════════════════════════════════════════════
-   LEFT PANEL
-═══════════════════════════════════════════════ */
+/* LEFT PANEL */
 .asst-panel {
   width: 300px;
   flex-shrink: 0;
@@ -168,9 +164,7 @@ import CocoChat from '../components/CocoChat';
   color: rgba(245,240,232,0.6);
 }
 
-/* ═══════════════════════════════════════════════
-   CHAT AREA (React component styles)
-═══════════════════════════════════════════════ */
+/* CHAT AREA (React component styles) */
 .asst-chat {
   flex: 1;
   display: flex;
@@ -179,7 +173,7 @@ import CocoChat from '../components/CocoChat';
   max-height: calc(100vh - var(--nav-height));
 }
 
-/* ── Global styles for the React component ── */
+/* Global styles for the React component */
 :global(.coco-wrap) {
   display: flex;
   flex-direction: column;
@@ -462,9 +456,7 @@ import CocoChat from '../components/CocoChat';
   50% { opacity: 0.35; }
 }
 
-/* ═══════════════════════════════════════════════
-   RESPONSIVE
-═══════════════════════════════════════════════ */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .asst-page {
     flex-direction: column;

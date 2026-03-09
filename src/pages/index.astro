@@ -11,7 +11,7 @@ import Footer from '../components/Footer.astro';
   <Navbar />
 
   <main>
-    <!-- ═══════════════ HERO ═══════════════ -->
+    <!-- HERO -->
     <section class="hero" aria-label="Hero section">
 
       <!-- Giant watermark PORTFOLIO text -->
@@ -79,9 +79,7 @@ import Footer from '../components/Footer.astro';
 </BaseLayout>
 
 <style>
-/* ══════════════════════════════════════════
-   HERO — BASE (desktop-first, >1024px)
-   ══════════════════════════════════════════ */
+/* HERO — BASE (desktop-first, >1024px) */
 .hero {
   /* svh = accounts for mobile browser chrome shrinking the viewport */
   min-height: 100svh;
@@ -97,7 +95,7 @@ import Footer from '../components/Footer.astro';
   align-items: center;
 }
 
-/* ── Watermark ─────────────────────────── */
+/* Watermark */
 .hero-watermark {
   position: absolute;
   inset: 0;
@@ -119,7 +117,7 @@ import Footer from '../components/Footer.astro';
   letter-spacing: 0.02em;
 }
 
-/* ── Hero title ────────────────────────── */
+/* Hero title */
 .hero-title {
   grid-column: 1 / -1;
   font-family: var(--font-display);
@@ -134,7 +132,7 @@ import Footer from '../components/Footer.astro';
   animation: fadeDown 0.8s cubic-bezier(.22,1,.36,1) both;
 }
 
-/* ── Intro card ────────────────────────── */
+/* Intro card */
 .intro-card {
   background: var(--olive-dark);
   color: var(--cream);
@@ -149,7 +147,7 @@ import Footer from '../components/Footer.astro';
 .intro-card p { font-size: 1.05rem; line-height: 1.6; }
 .intro-sub { margin-top: 0.6rem; font-size: 0.85rem; opacity: 0.75; }
 
-/* ── Photo ─────────────────────────────── */
+/* Photo───── */
 .hero-photo {
   justify-self: center;
   position: relative;
@@ -172,7 +170,7 @@ import Footer from '../components/Footer.astro';
   box-shadow: 0 4px 24px rgba(107, 58, 42, 0.15);
 }
 
-/* ── Assistant button ──────────────────── */
+/* Assistant button */
 .hero-assistant-btn {
   grid-column: 1;
   padding: 2rem 0 3.5rem 5vw;
@@ -209,7 +207,7 @@ import Footer from '../components/Footer.astro';
   animation: pulse 2s ease infinite;
 }
 
-/* ── Social card ───────────────────────── */
+/* Social card */
 .hero-social-card {
   grid-column: 2;
   background: var(--blush);
@@ -271,7 +269,7 @@ import Footer from '../components/Footer.astro';
 }
 .mobile-contact-btn:hover { opacity: 0.7; }
 
-/* ── Reveal animation ──────────────────── */
+/* Reveal animation */
 [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
@@ -291,18 +289,15 @@ import Footer from '../components/Footer.astro';
   50%       { transform: scale(1.4); opacity: 0.6; }
 }
 
-/* ══════════════════════════════════════════
-   RESPONSIVE BREAKPOINTS
-   ══════════════════════════════════════════
+/* RESPONSIVE BREAKPOINTS
 
-   1440px+ → wide desktop
-   1024px  → laptop / tablet landscape
-   768px   → tablet portrait / large phone
-   480px   → standard phone (iPhone 14, Pixel)
-   375px   → small phone (iPhone SE, small Android)
-   ══════════════════════════════════════════ */
+    1440px+ → wide desktop
+    1024px  → laptop / tablet landscape
+    768px   → tablet portrait / large phone
+    480px   → standard phone (iPhone 14, Pixel)
+    375px   → small phone (iPhone SE, small Android) */
 
-/* ── Wide desktop (≥1440px) ─────────────── */
+/* Wide desktop (≥1440px) */
 @media (min-width: 1440px) {
   .intro-card {
     max-width: 500px;
@@ -313,7 +308,7 @@ import Footer from '../components/Footer.astro';
   .hero-social-card { margin-right: 8vw; padding: 2rem 2.5rem; max-width: 220px; }
 }
 
-/* ── Laptop / tablet landscape (≤1024px) ── */
+/* Laptop / tablet landscape (≤1024px) */
 @media (max-width: 1024px) {
   .intro-card {
     max-width: 360px;
@@ -324,7 +319,7 @@ import Footer from '../components/Footer.astro';
   .hero-social-card { margin-right: 4vw; }
 }
 
-/* ── Tablet portrait / large phone (≤768px) */
+/* Tablet portrait / large phone (≤768px) */
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
@@ -388,7 +383,7 @@ import Footer from '../components/Footer.astro';
   }
 }
 
-/* ── Standard phones (≤480px) — iPhone 14, Pixel ── */
+/* Standard phones (≤480px) — iPhone 14, Pixel */
 @media (max-width: 480px) {
   .hero-title {
     font-size: clamp(2.5rem, 18vw, 4.5rem);
@@ -422,7 +417,7 @@ import Footer from '../components/Footer.astro';
   }
 }
 
-/* ── Small phones (≤375px) — iPhone SE ──── */
+/* Small phones (≤375px) — iPhone SE */
 @media (max-width: 375px) {
   .hero-title {
     font-size: clamp(2.2rem, 18vw, 3.8rem);
@@ -440,7 +435,7 @@ import Footer from '../components/Footer.astro';
   }
 }
 
-/* ── Reduce motion preference ──────────── */
+/* Reduce motion preference */
 @media (prefers-reduced-motion: reduce) {
   [data-reveal], .hero-title {
     animation: none;

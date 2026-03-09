@@ -142,7 +142,7 @@ Never make up information. Do not answer questions unrelated to Nathaly or her p
         {isEmpty && !error && (
           <div className="coco-welcome">
             <img src="/images/nath-chibi.png" alt="COCO" className="coco-welcome-img" />
-            <h2 className="coco-welcome-title">Hi! I'm COCO 🌿</h2>
+            <h2 className="coco-welcome-title">Hi! I'm COCO 🦦</h2>
             <p className="coco-welcome-desc">
               I'm an AI assistant that knows all about Nathaly Ingol.
               {!ready && ' Give me a moment to load up…'}

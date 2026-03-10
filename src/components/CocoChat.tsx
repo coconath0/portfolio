@@ -9,7 +9,6 @@ const SUGGESTED = [
   'Tell me about her projects',
   'What is her education background?',
   'Is she open to job opportunities?',
-  'Tell me about her work experience',
   'Who\'s Haru? 🐾',
 ];
 

@@ -40,6 +40,7 @@ A personal portfolio website for **Nathaly Ingol** - designed with a warm earthy
 
 | Layer | Technology |
 |-------|-----------|
+| Design | [Figma](https://figma.com) |
 | Framework | [Astro](https://astro.build) v5 |
 | Styling | [Tailwind CSS](https://tailwindcss.com) v4 + scoped CSS per page |
 | Components | React 19 (interactive islands) |
@@ -47,7 +48,21 @@ A personal portfolio website for **Nathaly Ingol** - designed with a warm earthy
 | Forms | Web3Forms |
 | Fonts | Bebas Neue . Playfair Display . DM Sans (Google Fonts) |
 | Deployment | Netlify |
-| SEO | Open Graph . JSON-LD . canonical URLs |
+| SEO | Open Graph . JSON-LD . canonical URLs . sitemap |
+
+---
+
+## 🎨 Figma Design
+
+The entire portfolio was designed in Figma before a single line of code was written - from layout and color palette to component structure and typography.
+
+[Check Figma Project Design!](https://www.figma.com/design/tymqx16WyKL5s21Ox1b8Y5/web?node-id=0-1&t=o7R2blU90Fzipt8K-1)
+
+<table>
+  <tr>
+    <td><img src="public/images/portfolio-figma/Home.png" alt="Home page design" /></td>
+  </tr>
+</table>
 
 ---
 

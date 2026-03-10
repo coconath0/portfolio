@@ -200,7 +200,13 @@ const projects: Project[] = [
       <div class="hero-watermark" aria-hidden="true">PROJECTS</div>
 
       <div class="carousel-wrapper">
-        <div class="carousel-track">
+        <button class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Scroll left">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="carousel-arrow carousel-next" id="carouselNext" aria-label="Scroll right">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="carousel-track" id="carouselTrack">
           {projects.map((p) => (
             <a class="carousel-card" href={`#project-${p.id}`} aria-label={`Jump to ${p.title}`}>
               <div class="carousel-img">
@@ -227,6 +233,36 @@ const projects: Project[] = [
 
       <p class="hero-tagline">Code. Design. Create.</p>
     </section>
+
+    <script>
+      const track = document.getElementById('carouselTrack')!;
+      const prev  = document.getElementById('carouselPrev')!;
+      const next  = document.getElementById('carouselNext')!;
+      const STEP  = 300;
+
+      prev.addEventListener('click', () => {
+        track.scrollBy({ left: -STEP, behavior: 'smooth' });
+      });
+      next.addEventListener('click', () => {
+        track.scrollBy({ left: STEP, behavior: 'smooth' });
+      });
+
+      // Mouse-wheel → horizontal scroll
+      track.addEventListener('wheel', (e: WheelEvent) => {
+        if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+          e.preventDefault();
+          track.scrollBy({ left: e.deltaY * 1.2, behavior: 'auto' });
+        }
+      }, { passive: false });
+
+      // Hide/show arrows based on scroll position
+      function updateArrows() {
+        prev.style.opacity = track.scrollLeft <= 10 ? '0.3' : '1';
+        next.style.opacity = track.scrollLeft + track.clientWidth >= track.scrollWidth - 10 ? '0.3' : '1';
+      }
+      track.addEventListener('scroll', updateArrows, { passive: true });
+      updateArrows();
+    </script>
 
     <!-- PROJECT DETAIL SECTIONS -->
     {projects.map((p) => (
@@ -362,6 +398,31 @@ const projects: Project[] = [
   z-index: 1;
   width: 100%;
   margin-top: 12rem;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--brown-dark);
+  border: 1.5px solid rgba(255,255,255,0.2);
+  color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.2s, transform 0.15s;
+}
+.carousel-arrow:hover { background: var(--brown); transform: translateY(-50%) scale(1.08); }
+.carousel-prev { left: 1rem; }
+.carousel-next { right: 1rem; }
+
+@media (max-width: 480px) {
+  .carousel-arrow { display: none; }
 }
 
 .carousel-track {

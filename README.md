@@ -175,7 +175,7 @@ COCO is a Gemini 2.5 Flash–powered chatbot scoped exclusively to Nathaly's por
 
 ## 📬 Contact
 
-- 💼 [linkedin.com/in/nathaly-ingol](https://linkedin.com/in/nathaly-ingol)
+- 💼 [linkedin.com/in/nathaly-ingol-leon](https://linkedin.com/in/nathaly-ingol-leon)
 - 🐙 [github.com/coconath0](https://github.com/coconath0)
 - 🌿 [linktr.ee/nathalyingol](https://linktr.ee/nathalyingol)
 

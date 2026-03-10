@@ -27,8 +27,3 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
-
-#Images not on github
-
-public/documents
-public/AI

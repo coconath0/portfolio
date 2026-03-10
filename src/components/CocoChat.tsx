@@ -8,6 +8,7 @@ const SUGGESTED = [
   'Tell me about her projects',
   'What is her education background?',
   'Is she open to job opportunities?',
+  'Tell me about her work experience',
 ];
 
 export default function CocoChat() {
@@ -40,10 +41,11 @@ export default function CocoChat() {
         const model = genAI.getGenerativeModel({
           model: 'gemini-2.5-flash',
           systemInstruction: `You are COCO, a friendly and knowledgeable AI assistant living inside Nathaly Ingol's portfolio website.
-You have been given a document with complete information about Nathaly — her background, skills, projects, work experience, education, and personality.
+You have been given a document with complete information about Nathaly - her background, skills, projects, work experience, education, and personality.
 Your job is to helpfully answer visitor questions about Nathaly using only the information in that document.
 Be warm, concise, and professional. Use short paragraphs. If a question is not covered in the document, say so politely.
-Never make up information. Do not answer questions unrelated to Nathaly or her portfolio.`,
+Never make up information. Do not answer questions unrelated to Nathaly or her portfolio.
+Be sweet and nice to users. Always use emojis in your responses to make them more engaging and friendly. 🌟`,
         });
 
         chatRef.current = model.startChat({
@@ -59,7 +61,7 @@ Never make up information. Do not answer questions unrelated to Nathaly or her p
               role: 'model',
               parts: [
                 {
-                  text: "Hi! I've read through Nathaly's portfolio document and I'm all set to help! 🌿 Ask me anything about her skills, projects, experience, or background.",
+                  text: "Hi! I've read through Nathaly's portfolio document and I'm all set to help! 🌸 Ask me anything about her skills, projects, experience, or background.",
                 },
               ],
             },

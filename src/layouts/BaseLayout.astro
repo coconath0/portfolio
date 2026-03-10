@@ -65,22 +65,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://nathalyi
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
 <body>
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
-
   <slot />
-
-  <script>
-    const cursor = document.getElementById('cursor')!;
-    const ring = document.getElementById('cursorRing')!;
-    let mouseX = 0, mouseY = 0;
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX; mouseY = e.clientY;
-      cursor.style.transform = `translate(${mouseX - 6}px, ${mouseY - 6}px)`;
-      ring.style.transform = `translate(${mouseX - 18}px, ${mouseY - 18}px)`;
-    });
-    document.addEventListener('mousedown', () => { cursor.style.width = '8px'; cursor.style.height = '8px'; });
-    document.addEventListener('mouseup', () => { cursor.style.width = '12px'; cursor.style.height = '12px'; });
-  </script>
 </body>
 </html>

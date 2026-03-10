@@ -10,6 +10,7 @@ const SUGGESTED = [
   'What is her education background?',
   'Is she open to job opportunities?',
   'Tell me about her work experience',
+  'Who\'s Haru? 🐾',
 ];
 
 export default function CocoChat() {

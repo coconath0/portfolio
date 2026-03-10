@@ -13,7 +13,9 @@ const {
   ogImage = "/images/og-cover.png",
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://nathalyingol.netlify.app');
+const SITE = 'https://nathalyingol.netlify.app';
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? SITE);
+const ogImageAbsolute = ogImage.startsWith('http') ? ogImage : `${SITE}${ogImage}`;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +37,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://nathalyi
   <meta property="og:url" content={canonicalURL} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={ogImage} />
+  <meta property="og:image" content={ogImageAbsolute} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="Nathaly Ingol Portfolio" />
   <meta property="og:locale" content="en_US" />
 
@@ -43,7 +47,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://nathalyi
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={ogImage} />
+  <meta name="twitter:image" content={ogImageAbsolute} />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json" set:html={JSON.stringify({
@@ -62,6 +66,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://nathalyi
     "knowsAbout": ["Software Engineering", "Data Engineering", "Machine Learning", "Web Development", "Python", "JavaScript"]
   })} />
 
+  <link rel="sitemap" href="/sitemap-index.xml" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
 <body>

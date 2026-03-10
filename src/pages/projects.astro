@@ -728,7 +728,14 @@ const projects: Project[] = [
 }
 
 /* RESPONSIVE */
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
+  .carousel-wrapper { margin-top: 20rem; }
+  .carousel-card { flex: 0 0 500px; }
+  .carousel-img  { min-height: 500px; }
+  .hero-tagline { margin-top: 15rem; }
+  .proj-card     { padding: 5rem 3rem; }
+}
+@media (max-width: 1440px) {
   .carousel-card { flex: 0 0 290px; }
   .carousel-img  { min-height: 230px; }
   .proj-card     { padding: 2.5rem 3rem; }

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import ReactMarkdown from 'react-markdown';
 
 type Message = { role: 'user' | 'model'; text: string };
 
@@ -177,8 +178,10 @@ Be sweet and nice to users. Always use emojis in your responses to make them mor
             <div className="coco-bubble">
               {msg.text === '' && msg.role === 'model' ? (
                 <span className="coco-typing"><span /><span /><span /></span>
+              ) : msg.role === 'model' ? (
+                <ReactMarkdown>{msg.text}</ReactMarkdown>
               ) : (
-                <span style={{ whiteSpace: 'pre-wrap' }}>{msg.text}</span>
+                <span>{msg.text}</span>
               )}
             </div>
           </div>

@@ -360,6 +360,16 @@ import CocoChat from '../components/CocoChat';
   border: 1px solid rgba(255,255,255,0.07);
 }
 
+/* Markdown inside model bubbles */
+:global(.coco-msg--model .coco-bubble p)       { margin: 0 0 0.5rem; }
+:global(.coco-msg--model .coco-bubble p:last-child) { margin-bottom: 0; }
+:global(.coco-msg--model .coco-bubble strong)  { font-weight: 700; color: var(--olive); }
+:global(.coco-msg--model .coco-bubble em)      { font-style: italic; opacity: 0.85; }
+:global(.coco-msg--model .coco-bubble ul,
+        .coco-msg--model .coco-bubble ol)       { padding-left: 1.2rem; margin: 0.3rem 0 0.5rem; }
+:global(.coco-msg--model .coco-bubble li)      { margin-bottom: 0.2rem; }
+:global(.coco-msg--model .coco-bubble code)    { background: rgba(255,255,255,0.12); padding: 0.1em 0.4em; border-radius: 4px; font-size: 0.82em; }
+
 /* typing indicator */
 :global(.coco-typing) {
   display: inline-flex;

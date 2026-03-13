@@ -18,7 +18,7 @@
 
 ## ✨ About This Portfolio
 
-A personal portfolio website for **Nathaly Ingol** - designed with a warm earthy aesthetic (cream, olive, brown & blush tones) to showcase her projects, skills, and professional journey. Features a custom AI assistant (COCO) powered by Gemini 2.5 Flash.
+A personal portfolio website - designed with a warm earthy aesthetic (cream, olive, brown & blush tones) to showcase my projects, skills, and professional journey. Features a custom AI assistant (COCO) powered by Gemini 2.5 Flash.
 
 ---
 
@@ -27,7 +27,7 @@ A personal portfolio website for **Nathaly Ingol** - designed with a warm earthy
 | Page | Route | Description |
 |------|-------|-------------|
 | 🏠 Home | `/` | Hero section with intro, social links & AI assistant CTA |
-| 👩‍💻 About Me | `/about` | Personal story, hobbies, photography & dog tax 🐶 |
+| 👩‍💻 About Me | `/about` | Personal story, hobbies, photography & dog 🐶 |
 | 📄 Resume | `/resume` | Education, experience, skills — downloadable PDF + virtual view |
 | 🖨️ Virtual Resume | `/virtual-resume` | Clean printable resume |
 | 🛠️ Projects | `/projects` | 8 project showcase with live demo & GitHub links |
@@ -54,7 +54,7 @@ A personal portfolio website for **Nathaly Ingol** - designed with a warm earthy
 
 ## 🎨 Figma Design
 
-The entire portfolio was designed in Figma before a single line of code was written - from layout and color palette to component structure and typography.
+The entire portfolio was designed in Figma before a single line of code was written, from layout and color palette to component structure and typography.
 
 [Check Figma Project Design!](https://www.figma.com/design/tymqx16WyKL5s21Ox1b8Y5/web?node-id=0-1&t=o7R2blU90Fzipt8K-1)
 
@@ -169,7 +169,7 @@ PUBLIC_GEMINI_KEY=your_gemini_api_key
 
 ## 💬 COCO AI Assistant
 
-COCO is a Gemini 2.5 Flash–powered chatbot scoped exclusively to Nathaly's portfolio context. On load it fetches `public/AI/COCO_AI_Script.pdf`, base64-encodes it, and passes it as an inline document in the chat history — giving Gemini full context about Nathaly's background, projects, and skills before the first user message. Responses are streamed in real time.
+COCO is a Gemini 2.5 Flash–powered chatbot scoped exclusively to my portfolio context. On load it fetches `public/AI/COCO_AI_Script.pdf`, base64-encodes it, and passes it as an inline document in the chat history. Giving Gemini full context about my background, projects, and skills before the first user message. Responses are streamed in real time.
 
 ---
 

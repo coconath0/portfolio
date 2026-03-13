@@ -307,7 +307,7 @@ const projects: Project[] = [
           >
             <p class="tech-label">Technologies used in project</p>
 
-            <!-- VERSION A — Icon badges (DEFAULT) -->
+            <!-- VERSION A - Icon badges (DEFAULT) -->
             <div class="tech-icons-row" aria-label="Technology badges">
               {p.technologies.map((t) => (
                 t.icon ? (
@@ -327,7 +327,7 @@ const projects: Project[] = [
               ))}
             </div>
 
-            <!-- VERSION B — Text pills (hidden by default) -->
+            <!-- VERSION B - Text pills (hidden by default) -->
             <div class="tech-pills-row" aria-label="Technology names">
               {p.technologies.map((t) => (
                 <span class="tech-pill">{t.name}</span>
@@ -392,7 +392,7 @@ const projects: Project[] = [
   z-index: 2;
 }
 
-/* ── Carousel ── */
+/* Carousel */
 .carousel-wrapper {
   position: relative;
   z-index: 1;
@@ -541,7 +541,7 @@ const projects: Project[] = [
   padding: 2rem 2.5rem;
 }
 
-/* ── Image card ── */
+/* Image card */
 .proj-image {
   grid-area: image;
   background: #f8f5f0;
@@ -566,7 +566,7 @@ const projects: Project[] = [
   transform: translate(-50%, -50%);
 }
 
-/* ── Title card ── */
+/* Title card */
 .proj-title {
   grid-area: title;
   display: flex;
@@ -617,7 +617,7 @@ const projects: Project[] = [
   opacity: 0.85;
 }
 
-/* ── Tech card ── */
+/* Tech card */
 .proj-tech {
   grid-area: tech;
   display: flex;
@@ -638,7 +638,7 @@ const projects: Project[] = [
 }
 .proj-tech.tech-light .tech-label { color: rgba(64,34,3,0.5); }
 
-/* ── VERSION A: icon badges (DEFAULT visible) ── */
+/* VERSION A: icon badges (DEFAULT visible) */
 .tech-icons-row {
   display: flex;
   flex-wrap: wrap;
@@ -680,7 +680,7 @@ const projects: Project[] = [
   object-fit: contain;
 }
 
-/* ── VERSION B: text pills (hidden by default) ── */
+/* VERSION B: text pills (hidden by default) */
 /* To activate: set .tech-icons-row { display: none } and .tech-pills-row { display: flex } */
 .tech-pills-row {
   display: none;
@@ -704,7 +704,7 @@ const projects: Project[] = [
   color: var(--brown-dark);
 }
 
-/* ── Buttons ── */
+/* Buttons */
 .proj-btns {
   margin-top: auto;
   display: flex;
@@ -754,7 +754,7 @@ const projects: Project[] = [
 }
 .proj-tech.tech-light .btn-github:hover { background: rgba(64,34,3,0.08); }
 
-/* ── Topics card ── */
+/* Topics card */
 .proj-topics {
   grid-area: topics;
   background: var(--cream);

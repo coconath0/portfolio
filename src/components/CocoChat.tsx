@@ -122,7 +122,7 @@ Be sweet and nice to users. Always use emojis in your responses to make them mor
 
   return (
     <div className="coco-wrap">
-      {/* ── Header ── */}
+      {/* Header */}
       <div className="coco-header">
         <img src="/images/nath-chibi.png" alt="COCO" className="coco-avatar-header" />
         <div>
@@ -139,7 +139,7 @@ Be sweet and nice to users. Always use emojis in your responses to make them mor
         </div>
       </div>
 
-      {/* ── Messages area ── */}
+      {/* Messages area */}
       <div className="coco-messages">
         {/* Welcome state */}
         {isEmpty && !error && (
@@ -193,7 +193,7 @@ Be sweet and nice to users. Always use emojis in your responses to make them mor
         <div ref={bottomRef} />
       </div>
 
-      {/* ── Input bar ── */}
+      {/* Input bar */}
       <div className="coco-input-bar">
         <input
           ref={inputRef}

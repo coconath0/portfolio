@@ -631,6 +631,7 @@ const projects: Project[] = [
                 t.icon ? (
                   <span class="tch-icon tch-icon-img" title={t.name} aria-label={t.name}>
                     <img src={t.icon} alt={t.name} width="26" height="26" loading="lazy" />
+                    <span class="tch-name">{t.name}</span>
                   </span>
                 ) : (
                   <span
@@ -640,6 +641,7 @@ const projects: Project[] = [
                     style={`background:${t.color}; color:${isLight(t.color) ? '#2A1A0A' : '#ffffff'};`}
                   >
                     {t.abbr}
+                    <span class="tch-name">{t.name}</span>
                   </span>
                 )
               ))}
@@ -996,6 +998,37 @@ const projects: Project[] = [
   width: 26px;
   height: 26px;
   object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Tech name - hidden by default, expands on hover on large screens */
+.tch-name {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  /* Allow icon badges to grow beyond their fixed width */
+  .tch-icon-img {
+    width: auto;
+  }
+  .tch-name {
+    display: block;
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-left: 0;
+    align-self: center;
+    transition: max-width 0.65s ease, opacity 0.22s ease, margin-left 0.65s ease;
+  }
+  .tch-icon:hover .tch-name {
+    max-width: 140px;
+    opacity: 1;
+    margin-left: 0.45rem;
+  }
 }
 
 /* VERSION B: text pills (hidden by default) */

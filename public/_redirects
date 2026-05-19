@@ -1,3 +1,3 @@
 # Redirect Netlify subdomain to custom domain to avoid duplicate indexing
 # Replace the target domain below if you switch to a custom domain.
-/* https://nathalyingol.netlify.app/:splat 301!
+#/* https://nathalyingol.netlify.app/:splat 301!
